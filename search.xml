@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <search id="com.sample.search">
+      <header>
+        <simpleHeader accessibilityLabel="Search example">
+          <title>Sample Search Title</title>
+          <image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+        </simpleHeader>
+      </header>
+      <baseURL>http://sample-web-server/sample-xml/search-results.xml?searchTerm=</baseURL>
+    </search>
+  </body>
+</atv>

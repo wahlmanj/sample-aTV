@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <dialog id="com.sample.error-dialog">
+	  <title>Not Implemented</title>
+	  <description>The feed for this page has not been written.</description>
+    </dialog>
+  </body>
+</atv>

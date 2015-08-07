@@ -1,0 +1,5 @@
+ABBREV,NAME,LOGO98_720,LOGO600_720,LOGO98_1080,LOGO600_1080
+ARM,Army,http://sample-web-server/sample-xml/images/720p/team1-98x98.png,http://sample-web-server/sample-xml/images/720p/team1-600x600.png,http://sample-web-server/sample-xml/images/1080p/team1-98x98.png,http://sample-web-server/sample-xml/images/1080p/team1-600x600.png
+NAV,Navy,http://sample-web-server/sample-xml/images/720p/team2-98x98.png,http://sample-web-server/sample-xml/images/720p/team2-600x600.png,http://sample-web-server/sample-xml/images/1080p/team2-98x98.png,http://sample-web-server/sample-xml/images/1080p/team2-600x600.png
+AIR,Air Force,http://sample-web-server/sample-xml/images/720p/team3-98x98.png,http://sample-web-server/sample-xml/images/720p/team3-600x600.png,http://sample-web-server/sample-xml/images/1080p/team3-98x98.png,http://sample-web-server/sample-xml/images/1080p/team3-600x600.png
+MAR,Marines,http://sample-web-server/sample-xml/images/720p/team4-98x98.png,http://sample-web-server/sample-xml/images/720p/team4-600x600.png,http://sample-web-server/sample-xml/images/1080p/team4-98x98.png,http://sample-web-server/sample-xml/images/1080p/team4-600x600.png

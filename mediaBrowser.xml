@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+		<script src="http://sample-web-server/sample-xml/js/mediaBrowser.js"/>
+	</head>
+	<body>
+		<mediaBrowser id="photoBatch.photoBrowser" gridLayout="mixed" >
+			<header>
+				<headerWithCountAndButtons>
+					<title>Popular</title>
+					<subtitle>popular subtitle</subtitle>
+					<count>20</count>
+					<buttons>
+						<actionButton id="settings_action_button" onSelect="onSettingsSelection();">
+							<title>Slideshow</title>
+						</actionButton>
+						<screensaverPhotosActionButton id="set_as_screensaver_button" onSelect="onScreensaverSelection( 'samplexml-browser-adhoc', 'AdHoc - Pantone - SampleXML' );" photoCollectionId="samplexml-browser-adhoc">
+							<title>Use as Screensaver</title>
+						</screensaverPhotosActionButton>
+					</buttons>
+				</headerWithCountAndButtons>
+			</header>
+			<initialSelection>
+				<indexPath>
+					<index>0</index>
+					<index>3</index>
+				</indexPath>
+			</initialSelection>
+			<items>
+				<photo id="photo_1" onSelect="onPhotoSelection('photo_1')" onPlay="onSlideshowStart( 'photo_1' );">
+					<caption>this is photo 1</caption>
+					<assets>
+						<photoAsset name="full_res" width="1500" height="1000" src="http://sample-web-server/sample-xml/images/sample/full/1000001.jpg"/>
+						<photoAsset name="high_res" width="750" height="500" src="http://sample-web-server/sample-xml/images/sample/large/1000001.jpg"/>
+						<photoAsset name="low_res" width="375" height="250" src="http://sample-web-server/sample-xml/images/sample/medium/1000001.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_0" onSelect="onPhotoSelection('photo_0')" onPlay="onSlideshowStart('photo_0');">
+					<caption>this is photo 0</caption>
+					<badges>
+						<commentsBadge style="readComment"/>
+					</badges>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000000.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000000.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000000.jpg"/>
+					</assets>
+					<stash>
+						<comments>
+							<comment>
+								<text>Deja vu?</text>
+								<footer>MyFriend 1 day ago</footer>
+							</comment>
+						</comments>
+					</stash>
+				</photo>
+				<photo id="photo_2" onSelect="onPhotoSelection('photo_2')" onPlay="onSlideshowStart('photo_2');">
+					<caption>this is photo 2</caption>
+					<badges>
+						<commentsBadge style="unreadComment"/>
+					</badges>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000002.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000002.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000002.jpg"/>
+					</assets>
+					<stash>
+						<liked>This is one of your own</liked>
+						<comments>
+							<comment>
+								<text>Here we go again</text>
+								<footer>MyFriend 1 day ago</footer>
+							</comment>
+							<comment>
+								<text>Still dangerous</text>
+								<footer>MyOtherFriend 1 min ago</footer>
+							</comment>
+						</comments>
+					</stash>
+				</photo>
+				<photo id="photo_4" onSelect="onPhotoSelection('photo_4')" onPlay="onSlideshowStart('photo_4');">
+					<caption>this is photo 4</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000004.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000004.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000004.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_6" onSelect="onPhotoSelection('photo_6')" onPlay="onSlideshowStart('photo_6');">
+					<caption>this is photo 6</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000006.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000006.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000006.jpg"/>
+					</assets>
+				</photo>
+				
+				<photo id="photo_3_1" onSelect="onPhotoSelection('photo_3_1')" onPlay="onSlideshowStart('photo_3_1');">
+					<caption>this is photo 3</caption>
+					<assets>
+						<photoAsset name="full_res" width="1500" height="1000" src="http://sample-web-server/sample-xml/images/sample/full/1000003.jpg"/>
+						<photoAsset name="high_res" width="750" height="500" src="http://sample-web-server/sample-xml/images/sample/large/1000003.jpg"/>
+						<photoAsset name="low_res" width="375" height="250" src="http://sample-web-server/sample-xml/images/sample/medium/1000003.jpg"/>
+					</assets>
+				</photo>
+				<video id="video_0" onSelect="onPhotoSelection('video_0')" onPlay="atv.loadURL('http://sample-web-server/sample-xml/sample-video/http-live-trickplay-video-player.xml')">
+					<caption>Here is our video</caption>
+					<badges>
+						<commentsBadge style="unreadComment" />
+					</badges>
+					<previewImages>
+						<videoPreviewImage name="high_res" width="750" height="500" src="http://sample-web-server/sample-xml/images/sample/large/1000013.jpg"/>
+						<videoPreviewImage name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000013.jpg"/>
+						<videoPreviewImage name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000013.jpg"/>
+					</previewImages>
+					<stash>
+						<videoUrl>http://sample-web-server/sample-xml/sample-video/http-live-trickplay-video-player.xml</videoUrl>
+					</stash>
+				</video>
+				<photo id="photo_8" onSelect="onPhotoSelection('photo_8')" onPlay="onSlideshowStart('photo_8');">
+					<caption>this is photo 8</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000008.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000008.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000008.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_10" onSelect="onPhotoSelection('photo_10')" onPlay="onSlideshowStart('photo_10');">
+					<caption>this is photo 10</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000010.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000010.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000010.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_12" onSelect="onPhotoSelection('photo_12')" onPlay="onSlideshowStart('photo_12');">
+					<caption>this is photo 12</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000012.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000012.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000012.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_14" onSelect="onPhotoSelection('photo_14')" onPlay="onSlideshowStart('photo_14');">
+					<caption>this is photo 14</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000014.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000014.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000014.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_16" onSelect="onPhotoSelection('photo_16')" onPlay="onSlideshowStart('photo_16');">
+					<caption>this is photo 16</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000016.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000016.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000016.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_18" onSelect="onPhotoSelection('photo_18')" onPlay="onSlideshowStart('photo_18');">
+					<caption>this is photo 18</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000018.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000018.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000018.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_20" onSelect="onPhotoSelection('photo_20')" onPlay="onSlideshowStart('photo_20');">
+					<caption>this is photo 20</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000020.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000020.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000020.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_22" onSelect="onPhotoSelection('photo_22')" onPlay="onSlideshowStart('photo_22');">
+					<caption>this is photo 22</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000022.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000022.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000022.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_24" onSelect="onPhotoSelection('photo_24')" onPlay="onSlideshowStart('photo_24');">
+					<caption>this is photo 24</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000024.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000024.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000024.jpg"/>
+					</assets>
+				</photo>
+
+				<photo id="photo_0_1" onSelect="onPhotoSelection('photo_0_1')" onPlay="onSlideshowStart('photo_0_1');">
+					<caption>this is photo 0</caption>
+					<badges>
+						<commentsBadge style="readComment"/>
+					</badges>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000000.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000000.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000000.jpg"/>
+					</assets>
+					<stash>
+						<comments>
+							<comment>
+								<text>This is a lovely image of 1000000</text>
+								<footer>MyFriend 1 day ago</footer>
+							</comment>
+						</comments>
+					</stash>
+				</photo>
+				<photo id="photo_2_1" onSelect="onPhotoSelection('photo_2_1')" onPlay="onSlideshowStart('photo_2_1');">
+					<caption>this is photo 2</caption>
+					<badges>
+						<commentsBadge style="unreadComment"/>
+					</badges>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000002.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000002.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000002.jpg"/>
+					</assets>
+					<stash>
+						<liked>freak out</liked>
+						<comments>
+							<comment>
+								<text>Watch out for 1000002</text>
+								<footer>MyFriend 1 day ago</footer>
+							</comment>
+							<comment>
+								<text>That light green will mezemerize you</text>
+								<footer>MyOtherFriend 1 min ago</footer>
+							</comment>
+						</comments>
+					</stash>
+				</photo>
+				<photo id="photo_4_1" onSelect="onPhotoSelection('photo_4_1')" onPlay="onSlideshowStart('photo_4_1');">
+					<caption>this is photo 4</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000004.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000004.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000004.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_6_1" onSelect="onPhotoSelection('photo_6_1')" onPlay="onSlideshowStart('photo_6_1');">
+					<caption>this is photo 6</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000006.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000006.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000006.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_8_1" onSelect="onPhotoSelection('photo_8_1')" onPlay="onSlideshowStart('photo_8_1');">
+					<caption>this is photo 8</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000008.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000008.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000008.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_10_1" onSelect="onPhotoSelection('photo_10_1')" onPlay="onSlideshowStart('photo_10_1');">
+					<caption>this is photo 10</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000010.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000010.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000010.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_12_1" onSelect="onPhotoSelection('photo_12_1')" onPlay="onSlideshowStart('photo_12_1');">
+					<caption>this is photo 12</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000012.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000012.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000012.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_14_1" onSelect="onPhotoSelection('photo_14_1')" onPlay="onSlideshowStart('photo_14_1');">
+					<caption>this is photo 14</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000014.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000014.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000014.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_16_1" onSelect="onPhotoSelection('photo_16_1')" onPlay="onSlideshowStart('photo_16_1');">
+					<caption>this is photo 16</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000016.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000016.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000016.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_18_1" onSelect="onPhotoSelection('photo_18_1')" onPlay="onSlideshowStart('photo_18_1');">
+					<caption>this is photo 18</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000018.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000018.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000018.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_20_1" onSelect="onPhotoSelection('photo_20_1')" onPlay="onSlideshowStart('photo_20_1');">
+					<caption>this is photo 20</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000020.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000020.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000020.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_22_1" onSelect="onPhotoSelection('photo_22_1')" onPlay="onSlideshowStart('photo_22_1');">
+					<caption>this is photo 22</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000022.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000022.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000022.jpg"/>
+					</assets>
+				</photo>
+				<photo id="photo_24_1" onSelect="onPhotoSelection('photo_24_1')" onPlay="onSlideshowStart('photo_24_1');">
+					<caption>this is photo 24</caption>
+					<assets>
+						<photoAsset name="full_res" width="1000" height="1500" src="http://sample-web-server/sample-xml/images/sample/full/1000024.jpg"/>
+						<photoAsset name="high_res" width="500" height="750" src="http://sample-web-server/sample-xml/images/sample/large/1000024.jpg"/>
+						<photoAsset name="low_res" width="250" height="375" src="http://sample-web-server/sample-xml/images/sample/medium/1000024.jpg"/>
+					</assets>
+				</photo>
+			</items>
+			<stash>
+				<somethinguseful/>
+			</stash>
+		</mediaBrowser>
+	</body>
+</atv>

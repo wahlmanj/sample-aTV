@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+  <body>
+    <preview>
+      <scrollerPreview id="com.sample.subScroller">
+        <items>
+          <grid id="grid_0" columnCount="5">
+            <items>
+              <moviePoster id="grid_item_1" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 1</title>
+                <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_2" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 2</title>
+                <image>http://sample-web-server/sample-xml/images/movie2.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_3" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 3</title>
+                <image>http://sample-web-server/sample-xml/images/movie3.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_4" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 4</title>
+                <image>http://sample-web-server/sample-xml/images/movie4.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_5" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 5</title>
+                <image>http://sample-web-server/sample-xml/images/movie5.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_6" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 6</title>
+                <image>http://sample-web-server/sample-xml/images/movie6.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_7" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 7</title>
+                <image>http://sample-web-server/sample-xml/images/movie7.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_8" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 8</title>
+                <image>http://sample-web-server/sample-xml/images/movie8.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_9" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 9</title>
+                <image>http://sample-web-server/sample-xml/images/movie9.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_10" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 10</title>
+                <image>http://sample-web-server/sample-xml/images/movie10.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_11" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 11</title>
+                <image>http://sample-web-server/sample-xml/images/movie11.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_12" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 12</title>
+                <image>http://sample-web-server/sample-xml/images/movie12.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_13" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 13</title>
+                <image>http://sample-web-server/sample-xml/images/movie13.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+              <moviePoster id="grid_item_14" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <title>Movie 14</title>
+                <image>http://sample-web-server/sample-xml/images/movie14.png</image>
+                <defaultImage>resource://Poster.png</defaultImage>
+              </moviePoster>
+            </items>
+          </grid>
+        </items>
+      </scrollerPreview>
+    </preview>
+  </body>
+</atv>

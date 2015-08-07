@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <videoPlayer id="com.sample.video-player">
+		<httpLiveStreamingVideoAsset id="ABCD1234" indefiniteDuration="false">
+			<mediaURL>http://sample-web-server/sample-xml/sample-video/http-live-streaming-sample/prog_index.m3u8</mediaURL>
+			<title>Net bookmark at 5s with interstitial (gross should be 15s)</title>
+			<description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+			<image>http://sample-web-server/sample-xml/images/movie1.png</image>
+			<eventGroup required="true">http://sample-web-server/sample-xml/sample-video/interstitials.xml</eventGroup>
+			<bookmarkNetTime>5</bookmarkNetTime>
+		</httpLiveStreamingVideoAsset>
+	</videoPlayer>
+  </body>
+</atv>

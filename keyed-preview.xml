@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <preview>
+      <keyedPreview>
+        <title>Title</title>
+        <summary>Summary text goes here. The summary length will be capped. Summary text goes here. The summary length will be capped.</summary>
+        <rating>TV-Y7</rating>
+        <image>http://sample-web-server/sample-xml/images/tv1.png</image>
+        <footnote>Footnote text for things like copyright text</footnote>
+        <metadataKeys>
+          <label>label 1</label>
+          <label>label 2</label>
+          <label>label 3</label>
+        </metadataKeys>
+        <metadataValues>
+          <label>metadata 1</label>
+          <label>metadata 2</label>
+          <label>metadata 3</label>
+        </metadataValues>
+      </keyedPreview>
+    </preview>
+  </body>
+</atv>

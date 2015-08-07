@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<scroller id="com.sample.movie-shelf">
+			<items>
+				<shelf id="shelf_0" columnCount="5">
+					<sections>
+						<shelfSection>
+							<items>
+								<% 5.times do |x| %>
+								<moviePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Movie <%=x+1%>" featured="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<image src720="http://sample-web-server/sample-xml/images/1080p/featured-movie<%=x+1%>.png" src1080="http://sample-web-server/sample-xml/images/1080p/featured-movie<%=x+1%>.png" />
+									<defaultImage>resource://16X9.png</defaultImage>
+								</moviePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<collectionDivider alignment="left" accessibilityLabel="Top Movies">
+					<title>Top Movies</title>
+				</collectionDivider>
+				<shelf id="shelf_1">
+					<sections>
+						<shelfSection>
+							<items>
+								<% 14.times do |x| %>
+								<moviePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Movie <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>Movie <%=x+1%></title>
+									<image src720="http://sample-web-server/sample-xml/images/1080p/movie<%=x+1%>.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie<%=x+1%>.png" />
+									<defaultImage>resource://Poster.png</defaultImage>
+									<ordinal><%=x+1%></ordinal>
+								</moviePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<collectionDivider alignment="left" accessibilityLabel="New arrivals">
+					<title>New Arrivals</title>
+				</collectionDivider>
+				<shelf id="shelf_2">
+					<sections>
+						<shelfSection>					
+							<items>
+								<% 14.times do |x| %>
+								<moviePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Movie <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>Movie <%=x+1%></title>
+									<image src720="http://sample-web-server/sample-xml/images/1080p/movie<%=x+1%>.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie<%=x+1%>.png" />
+									<defaultImage>resource://Poster.png</defaultImage>
+								</moviePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<collectionDivider alignment="left" accessibilityLabel="Top Rated">
+					<title>Top Rated</title>
+				</collectionDivider>
+				<shelf id="shelf_3">
+					<sections>
+						<shelfSection>										
+							<items>
+								<% 14.times do |x| %>
+								<moviePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Movie <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>Movie <%=x+1%></title>
+									<image src720="http://sample-web-server/sample-xml/images/1080p/movie<%=x+1%>.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie<%=x+1%>.png" />
+									<defaultImage>resource://Poster.png</defaultImage>
+								</moviePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+			</items>
+		</scroller>
+	</body>
+</atv>

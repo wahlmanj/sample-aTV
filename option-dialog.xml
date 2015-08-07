@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <optionDialog id="com.sample.error-dialog">
+      <header>
+        <simpleHeader accessibilityLabel="Dialog with Options">
+          <title>Option Dialog</title>
+        </simpleHeader>
+      </header>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <menu>
+        <initialSelection>
+          <row>1</row>
+        </initialSelection>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem id="list_0" accessibilityLabel="Option 1" onSelect="console.log('Option 1 selected'); atv.unloadPage();">
+                <label>Option 1</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_0" accessibilityLabel="Option 2" onSelect="console.log('Option 2 selected'); atv.unloadPage();">
+                <label>Option 2</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </optionDialog>
+  </body>
+</atv>

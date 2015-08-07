@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+		<script src="http://sample-web-server/sample-xml/js/item-detail.js"/>
+	</head>
+	<body>
+		<itemDetail id="com.sample.tv-episode">
+			<title>1. TV Episode Title</title>
+			<rightImage required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</rightImage>
+			<rating>TV-14</rating>
+			<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</summary>
+			<image style="squarePoster">http://sample-web-server/sample-xml/images/tv1.png</image>
+			<footnote>© The Studio, Inc.  All Rights Reserved.</footnote>
+			<table>
+				<columnDefinitions>
+					<columnDefinition width="50"/>
+				</columnDefinitions>
+				<rows>
+					<row>
+						<label>Released 5/17/11</label>
+					</row>
+					<row>
+						<label>46 minutes</label>
+					</row>
+					<row>
+						<image required="true">http://sample-web-server/sample-xml/images/zyx-super-small.png</image>
+					</row>
+					<row>
+						<mediaBadges>
+							<videoFormat>HD</videoFormat>
+							<audioFormat>dolbyDigital</audioFormat>
+							<closedCaption/>
+						</mediaBadges>
+					</row>
+					<row>
+						<starRating>
+							<percentage>50</percentage>
+						</starRating>
+					</row>
+				</rows>
+			</table>
+			<centerShelf>
+				<shelf id="centerShelf" columnCount="4" center="true">
+					<sections>
+						<shelfSection>
+							<items>
+								<actionButton  id="preview" accessibilityLabel="Preview">
+									<title>Preview</title>
+									<image>resource://Preview.png</image>
+									<focusedImage>resource://PreviewFocused.png</focusedImage>
+								</actionButton>
+								<actionButton id="play" accessibilityLabel="Play Episode">
+									<title>Play</title>
+									<image>resource://Play.png</image>
+									<focusedImage>resource://PlayFocused.png</focusedImage>
+								</actionButton>
+								<actionButton id="add" accessibilityLabel="Add to wish list" onSelect="handleActionButtonClicked('add');">
+									<title>Add</title>
+									<image>resource://WishList.png</image>
+									<focusedImage>resource://WishListFocused.png</focusedImage>
+								</actionButton>
+								<actionButton id="rate" onSelect="handleRateButtonPressed();">
+									<title>Rate</title>
+									<image>resource://Rate.png</image>
+									<focusedImage>resource://RateFocused.png</focusedImage>
+								</actionButton>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+			</centerShelf>
+			<divider>
+				<smallCollectionDivider alignment="left" accessibilityLabel="Related content">
+					<title>Related Content</title>
+				</smallCollectionDivider>
+			</divider>
+			<bottomShelf>
+				<shelf id="bottomShelf" columnCount="7">
+					<sections>
+						<shelfSection>										
+							<items>
+								<% 7.times do |x| %>
+								<squarePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Related TV Show <%=x+1%>" related="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/error-dialog.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>TV Show <%=x+1%></title>
+									<image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png" />
+									<defaultImage>resource://Square.png</defaultImage>
+								</squarePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+			</bottomShelf>
+		</itemDetail>
+	</body>
+</atv>

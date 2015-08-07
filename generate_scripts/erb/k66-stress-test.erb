@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<scroller id="com.sample.stress-test">
+			<header>
+				<simpleHeader accessibilityLabel="Movie shelf">
+					<title>Stress Test</title>
+					<image required="true" src1080="http://sample-web-server/sample-xml/images/1080p/ZYXLogo.png" src720="http://sample-web-server/sample-xml/images/720p/ZYXLogo.png" />
+				</simpleHeader>
+			</header>
+			<items>
+				<collectionDivider alignment="left" accessibilityLabel="Most Popular">
+					<title>Most Popular</title>
+				</collectionDivider>
+				<grid id="grid_1">
+					<items>
+						<% 10000.times do |x| %>
+						<moviePoster id="grid_item_<%=x+1%>" accessibilityLabel="Grid item <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+							<title>Movie <%= x+1 %></title>
+							<image src720="http://sample-web-server/sample-xml/images/720p/movie1.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie1.png" />
+							<defaultImage>resource://Poster.png</defaultImage>
+						</moviePoster>
+						<% end %>
+					</items>
+				</grid>
+			</items>
+		</scroller>
+	</body>
+</atv>

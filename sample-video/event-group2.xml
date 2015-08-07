@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <eventGroup>
+	  <title>Event Group 2</title>
+      <refreshInterval>10</refreshInterval>
+	  <event>
+        <start>2010-12-04T02:01:00Z</start>
+        <end>2010-12-04T02:06:00Z</end>
+        <title>Sample Event Title</title>
+        <description>Sample event description which is meant to be a little longer.</description>
+        <image>http://sample-web-server/sample-xml/image-for-this-event.jpg</image>
+	  </event>
+	  <event>
+        <start>2010-12-04T02:11:00Z</start>
+        <end>2010-12-04T02:16:00Z</end>
+        <title>Sample Event Title</title>
+        <description>Sample event description which is meant to be a little longer.</description>
+        <image>http://sample-web-server/sample-xml/image-for-this-event.jpg</image>
+	  </event>
+	  <event>
+        <start>2010-12-04T02:21:00Z</start>
+        <end>2010-12-04T02:26:00Z</end>
+        <title>Sample Event Title</title>
+        <description>Sample event description which is meant to be a little longer.</description>
+        <image>http://sample-web-server/sample-xml/image-for-this-event.jpg</image>
+	  </event>
+    </eventGroup>
+  </body>
+</atv>

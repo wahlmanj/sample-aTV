@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+  <body>
+    <listWithPreview id="com.sample.authentication" volatile="true" onVolatileReload="atv.loadAndSwapXML(document);">
+      <header>
+        <simpleHeader>
+          <title>Authentication</title>
+        </simpleHeader>
+      </header>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem id="list_0" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/authentication/instructions.xml');">
+                <label>Instructions</label>
+                <accessories>
+                  <arrow/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_1" onSelect="var authToken = atv.sessionStorage['auth-token'] || 'no-token'; atvutils.loadURL('http://sample-web-server:3000/make-me-auth?url=http%3A%2F%2Fsample-web-server%2Fsample-xml%2Fauthentication%2Fsecure-resource.xml&amp;auth-token=' + authToken);">
+                <label>Secure Resource</label>
+                <accessories>
+                  <arrow/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_2"  onSelect="atvutils.loadURL('http://sample-web-server:3000/make-me-auth?url=http%3A%2F%2Fsample-web-server%2Fsample-xml%2Fauthentication%2Fsecure-resource.xml&amp;auth-token=12345');">
+                <label>Secure Resource (auth-token baked in)</label>
+                <accessories>
+                  <arrow/>
+                </accessories>
+              </oneLineMenuItem>
+              <signInSignOutMenuItem id="list_3">
+                <signInPageURL>http://sample-web-server:3000/authonly</signInPageURL>
+              </signInSignOutMenuItem>
+              <oneLineMenuItem id="list_4" accessibilityLabel="Sign out with javascript" onSelect="atv.logout(); atv.loadAndSwapXML(document);">
+                <label>Sign out using JavaScript</label>
+                <accessories>
+                  <arrow/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_5" onSelect="showSavedCredentials();">
+                <label>Get saved credentials</label>
+                <accessories>
+                  <arrow/>
+                </accessories>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listWithPreview>
+  </body>
+</atv>

@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <scroller id="com.sample.video-clips">
+      <header>
+        <simpleHeader accessibilityLabel="Movies">
+          <title>Movies</title>
+          <image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+        </simpleHeader>
+      </header>
+      <items>
+        <collectionDivider alignment="left" accessibilityLabel="16x9 Shelf">
+          <title>16x9 Shelf</title>
+        </collectionDivider>
+        <shelf id="shelf_0" columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                <sixteenByNinePoster id="item_0_1" accessibilityLabel="Poster item 1" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 1</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_2" accessibilityLabel="Poster item 2" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 2</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_3" accessibilityLabel="Poster item 3" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 3</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_4" accessibilityLabel="Poster item 4" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 4</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_5" accessibilityLabel="Poster item 5" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 5</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_6" accessibilityLabel="Poster item 6" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 6</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_7" accessibilityLabel="Poster item 7" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 7</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_8" accessibilityLabel="Poster item 8" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 8</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_9" accessibilityLabel="Poster item 9" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 9</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_10" accessibilityLabel="Poster item 10" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 10</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_11" accessibilityLabel="Poster item 11" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 11</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_12" accessibilityLabel="Poster item 12" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 12</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_13" accessibilityLabel="Poster item 13" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 13</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_14" accessibilityLabel="Poster item 14" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 14</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_15" accessibilityLabel="Poster item 15" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 15</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_16" accessibilityLabel="Poster item 16" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 16</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_17" accessibilityLabel="Poster item 17" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 17</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_18" accessibilityLabel="Poster item 18" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 18</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_19" accessibilityLabel="Poster item 19" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 19</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_20" accessibilityLabel="Poster item 20" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 20</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_21" accessibilityLabel="Poster item 21" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 21</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_22" accessibilityLabel="Poster item 22" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 22</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_23" accessibilityLabel="Poster item 23" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 23</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_24" accessibilityLabel="Poster item 24" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 24</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_25" accessibilityLabel="Poster item 25" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 25</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_26" accessibilityLabel="Poster item 26" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 26</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_27" accessibilityLabel="Poster item 27" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 27</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_28" accessibilityLabel="Poster item 28" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 28</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_29" accessibilityLabel="Poster item 29" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 29</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_30" accessibilityLabel="Poster item 30" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 30</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_31" accessibilityLabel="Poster item 31" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 31</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_32" accessibilityLabel="Poster item 32" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 32</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_33" accessibilityLabel="Poster item 33" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 33</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_34" accessibilityLabel="Poster item 34" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 34</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_35" accessibilityLabel="Poster item 35" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 35</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_36" accessibilityLabel="Poster item 36" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 36</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_37" accessibilityLabel="Poster item 37" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 37</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_38" accessibilityLabel="Poster item 38" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 38</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_39" accessibilityLabel="Poster item 39" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 39</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_40" accessibilityLabel="Poster item 40" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 40</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_41" accessibilityLabel="Poster item 41" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 41</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_42" accessibilityLabel="Poster item 42" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 42</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_43" accessibilityLabel="Poster item 43" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 43</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_44" accessibilityLabel="Poster item 44" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 44</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_45" accessibilityLabel="Poster item 45" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 45</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_46" accessibilityLabel="Poster item 46" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 46</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_47" accessibilityLabel="Poster item 47" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 47</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_48" accessibilityLabel="Poster item 48" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 48</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_49" accessibilityLabel="Poster item 49" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 49</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="item_0_50" accessibilityLabel="Poster item 50" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 50</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+                  <defaultImage>resource://16x9.png</defaultImage>
+                </sixteenByNinePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="4x3 Shelf">
+          <title>4x3 Shelf</title>
+        </collectionDivider>
+        <shelf id="shelf_1" columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                <fourByThreePoster id="item_1_1" accessibilityLabel="Poster item 1" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 1</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_2" accessibilityLabel="Poster item 2" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 2</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_3" accessibilityLabel="Poster item 3" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 3</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_4" accessibilityLabel="Poster item 4" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 4</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_5" accessibilityLabel="Poster item 5" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 5</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_6" accessibilityLabel="Poster item 6" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 6</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_7" accessibilityLabel="Poster item 7" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 7</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_8" accessibilityLabel="Poster item 8" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 8</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_9" accessibilityLabel="Poster item 9" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 9</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_10" accessibilityLabel="Poster item 10" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 10</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_11" accessibilityLabel="Poster item 11" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 11</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_12" accessibilityLabel="Poster item 12" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 12</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_13" accessibilityLabel="Poster item 13" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 13</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_14" accessibilityLabel="Poster item 14" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 14</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_15" accessibilityLabel="Poster item 15" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 15</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_16" accessibilityLabel="Poster item 16" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 16</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_17" accessibilityLabel="Poster item 17" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 17</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_18" accessibilityLabel="Poster item 18" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 18</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_19" accessibilityLabel="Poster item 19" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 19</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_20" accessibilityLabel="Poster item 20" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 20</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_21" accessibilityLabel="Poster item 21" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 21</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_22" accessibilityLabel="Poster item 22" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 22</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_23" accessibilityLabel="Poster item 23" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 23</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_24" accessibilityLabel="Poster item 24" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 24</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_25" accessibilityLabel="Poster item 25" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 25</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_26" accessibilityLabel="Poster item 26" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 26</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_27" accessibilityLabel="Poster item 27" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 27</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_28" accessibilityLabel="Poster item 28" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 28</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_29" accessibilityLabel="Poster item 29" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 29</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_30" accessibilityLabel="Poster item 30" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 30</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_31" accessibilityLabel="Poster item 31" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 31</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_32" accessibilityLabel="Poster item 32" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 32</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_33" accessibilityLabel="Poster item 33" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 33</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_34" accessibilityLabel="Poster item 34" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 34</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_35" accessibilityLabel="Poster item 35" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 35</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_36" accessibilityLabel="Poster item 36" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 36</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_37" accessibilityLabel="Poster item 37" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 37</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_38" accessibilityLabel="Poster item 38" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 38</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_39" accessibilityLabel="Poster item 39" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 39</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_40" accessibilityLabel="Poster item 40" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 40</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_41" accessibilityLabel="Poster item 41" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 41</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_42" accessibilityLabel="Poster item 42" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 42</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_43" accessibilityLabel="Poster item 43" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 43</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_44" accessibilityLabel="Poster item 44" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 44</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_45" accessibilityLabel="Poster item 45" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 45</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_46" accessibilityLabel="Poster item 46" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 46</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_47" accessibilityLabel="Poster item 47" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 47</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_48" accessibilityLabel="Poster item 48" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 48</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_49" accessibilityLabel="Poster item 49" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 49</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+                <fourByThreePoster id="item_1_50" accessibilityLabel="Poster item 50" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip 50</title>
+                  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+                  <defaultImage>resource://4x3.png</defaultImage>
+                </fourByThreePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="16x9 Grid">
+          <title>16x9 Grid</title>
+        </collectionDivider>
+        <grid id="grid_2" columnCount="5">
+          <items>
+            <sixteenByNinePoster id="item_2_1" accessibilityLabel="Poster item 1" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 1</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_2" accessibilityLabel="Poster item 2" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 2</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_3" accessibilityLabel="Poster item 3" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 3</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_4" accessibilityLabel="Poster item 4" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 4</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_5" accessibilityLabel="Poster item 5" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 5</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_6" accessibilityLabel="Poster item 6" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 6</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_7" accessibilityLabel="Poster item 7" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 7</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_8" accessibilityLabel="Poster item 8" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 8</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_9" accessibilityLabel="Poster item 9" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 9</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_10" accessibilityLabel="Poster item 10" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 10</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_11" accessibilityLabel="Poster item 11" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 11</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_12" accessibilityLabel="Poster item 12" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 12</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_13" accessibilityLabel="Poster item 13" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 13</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_14" accessibilityLabel="Poster item 14" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 14</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_15" accessibilityLabel="Poster item 15" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 15</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_16" accessibilityLabel="Poster item 16" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 16</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_17" accessibilityLabel="Poster item 17" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 17</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_18" accessibilityLabel="Poster item 18" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 18</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_19" accessibilityLabel="Poster item 19" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 19</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+            <sixteenByNinePoster id="item_2_20" accessibilityLabel="Poster item 20" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 20</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/16x9.png" src1080="http://sample-web-server/sample-xml/images/1080p/16x9.png"/>
+              <defaultImage>resource://16x9.png</defaultImage>
+            </sixteenByNinePoster>
+          </items>
+        </grid>
+        <collectionDivider alignment="left" accessibilityLabel="4x3 Grid">
+          <title>4x3 Grid</title>
+        </collectionDivider>
+        <grid id="grid_3" columnCount="5">
+          <items>
+            <fourByThreePoster id="item_3_1" accessibilityLabel="Poster item 1" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 1</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_2" accessibilityLabel="Poster item 2" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 2</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_3" accessibilityLabel="Poster item 3" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 3</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_4" accessibilityLabel="Poster item 4" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 4</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_5" accessibilityLabel="Poster item 5" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 5</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_6" accessibilityLabel="Poster item 6" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 6</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_7" accessibilityLabel="Poster item 7" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 7</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_8" accessibilityLabel="Poster item 8" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 8</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_9" accessibilityLabel="Poster item 9" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 9</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_10" accessibilityLabel="Poster item 10" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 10</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_11" accessibilityLabel="Poster item 11" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 11</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_12" accessibilityLabel="Poster item 12" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 12</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_13" accessibilityLabel="Poster item 13" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 13</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_14" accessibilityLabel="Poster item 14" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 14</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_15" accessibilityLabel="Poster item 15" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 15</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_16" accessibilityLabel="Poster item 16" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 16</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_17" accessibilityLabel="Poster item 17" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 17</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_18" accessibilityLabel="Poster item 18" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 18</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_19" accessibilityLabel="Poster item 19" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 19</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+            <fourByThreePoster id="item_3_20" accessibilityLabel="Poster item 20" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Video Clip 20</title>
+              <subtitle>Subtitle</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/4x3.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/4x3.jpg"/>
+              <defaultImage>resource://4x3.png</defaultImage>
+            </fourByThreePoster>
+          </items>
+        </grid>
+      </items>
+    </scroller>
+  </body>
+</atv>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <scroller fixedHeader="true" id="com.sample.tv-room">
+      <header>
+        <simpleHeader accessibilityLabel="TV room">
+          <title>Room Title Stays At Top</title>
+          <image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+        </simpleHeader>
+      </header>
+      <items>
+        <grid id="grid_0" columnCount="6">
+          <items>
+            <squarePoster alwaysShowTitles="true" id="item_1" accessibilityLabel="TV Show 1" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 1</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>1</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_2" accessibilityLabel="TV Show 2" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 2</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>11</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_3" accessibilityLabel="TV Show 3" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 3</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>21</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_4" accessibilityLabel="TV Show 4" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 4</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>31</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_5" accessibilityLabel="TV Show 5" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 5</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>41</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_6" accessibilityLabel="TV Show 6" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 6</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>51</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_7" accessibilityLabel="TV Show 7" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 7</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>61</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_8" accessibilityLabel="TV Show 8" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 8</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>71</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_9" accessibilityLabel="TV Show 9" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 9</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>81</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_10" accessibilityLabel="TV Show 10" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 10</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>91</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_11" accessibilityLabel="TV Show 11" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 11</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>101</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_12" accessibilityLabel="TV Show 12" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 12</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_13" accessibilityLabel="TV Show 13" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 13</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_14" accessibilityLabel="TV Show 14" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 14</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_15" accessibilityLabel="TV Show 15" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 15</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_16" accessibilityLabel="TV Show 16" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 16</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_17" accessibilityLabel="TV Show 17" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 17</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_18" accessibilityLabel="TV Show 18" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 18</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_19" accessibilityLabel="TV Show 19" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 19</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_20" accessibilityLabel="TV Show 20" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 20</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_21" accessibilityLabel="TV Show 21" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 21</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_22" accessibilityLabel="TV Show 22" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 22</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_23" accessibilityLabel="TV Show 23" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 23</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_24" accessibilityLabel="TV Show 24" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 24</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_25" accessibilityLabel="TV Show 25" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 25</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_26" accessibilityLabel="TV Show 26" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 26</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_27" accessibilityLabel="TV Show 27" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 27</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_28" accessibilityLabel="TV Show 28" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 28</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_29" accessibilityLabel="TV Show 29" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 29</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+            <squarePoster alwaysShowTitles="true" id="item_30" accessibilityLabel="TV Show 30" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>TV Show 30</title>
+              <subtitle>Episode Name</subtitle>
+              <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png"/>
+              <defaultImage>resource://Square.png</defaultImage>
+              <badgeCount>0</badgeCount>
+            </squarePoster>
+          </items>
+        </grid>
+      </items>
+    </scroller>
+  </body>
+</atv>

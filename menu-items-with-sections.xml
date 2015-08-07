@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <listWithPreview id="com.sample.menu-items-with-sections">
+      <header>
+        <simpleHeader accessibilityLabel="Simple menu items">
+          <title>Simple Menu Items</title>
+        </simpleHeader>
+      </header>
+      <preview>
+        <paradePreview inOrder="true">
+          <image src720="http://sample-web-server/sample-xml/images/720p/movie1.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie1.png"/>
+          <image src720="http://sample-web-server/sample-xml/images/720p/movie2.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie2.png"/>
+          <image src720="http://sample-web-server/sample-xml/images/720p/movie3.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie3.png"/>
+          <image src720="http://sample-web-server/sample-xml/images/720p/movie4.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie4.png"/>
+          <image src720="http://sample-web-server/sample-xml/images/720p/movie5.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie5.png"/>
+          <image src720="http://sample-web-server/sample-xml/images/720p/movie6.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie6.png"/>
+          <image src720="http://sample-web-server/sample-xml/images/720p/movie7.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie7.png"/>
+        </paradePreview>
+      </preview>
+      <menu>
+        <sections>
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left" accessibilityLabel="Left justified section">
+                <title>Left Section Title</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_left_1" accessibilityLabel="Menu Item 1">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_left_2" accessibilityLabel="Menu Item 2">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_left_3" accessibilityLabel="Menu Item 3">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="center" accessibilityLabel="Centered section">
+                <title>Center Section Title</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_center_1" accessibilityLabel="Menu Item 1">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_center_2" accessibilityLabel="Menu Item 2">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_center_3" accessibilityLabel="Menu Item 3">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="right" accessibilityLabel="Right justified section">
+                <title>Right Section Title</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_right_1" accessibilityLabel="Menu Item 1">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_right_2" accessibilityLabel="Menu Item 2">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_right_3" accessibilityLabel="Menu Item 3">
+                <label>Menu item title</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listWithPreview>
+  </body>
+</atv>

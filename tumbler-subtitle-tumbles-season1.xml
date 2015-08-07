@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <listByNavigation id="com.sample.tumbler-season1">
+      <header>
+        <tumblerWithSubtitle accessibilityLabel="Glee, the first season">
+	      <title>Glee</title>
+          <subtitle>Season 1</subtitle>
+        </tumblerWithSubtitle>
+      </header>
+      <navigation currentIndex="0">
+        <navigationItem>
+          <title>Season 1</title>
+          <url>http://sample-web-server/sample-xml/tumbler-subtitle-tumbles-season1.xml</url>
+        </navigationItem>
+        <navigationItem accessibilityLabel="Glee, the second season">
+          <title>Season 2</title>
+          <url>http://sample-web-server/sample-xml/tumbler-subtitle-tumbles-season2.xml</url>
+        </navigationItem>
+        <navigationItem accessibilityLabel="Glee, season 3">
+          <title>Season 3</title>
+          <url>http://sample-web-server/sample-xml/tumbler-subtitle-tumbles-season3.xml</url>
+        </navigationItem>
+      </navigation>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem id="list_0" accessibilityLabel="Episode 1">
+                <label>Episode 1</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_1" accessibilityLabel="Episode 2">
+                <label>Episode 2</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_2" accessibilityLabel="Episode 3">
+                <label>Episode 3</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listByNavigation>
+  </body>
+</atv>

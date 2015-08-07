@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <dialog id="com.sample.dialog">
+	  <title>Secured Resource</title>
+	  <description>This is a secured resource that requires device token.</description>
+    </dialog>
+  </body>
+</atv>

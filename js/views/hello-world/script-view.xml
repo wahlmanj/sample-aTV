@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <scriptView id="com.sample.javascript-view-hello-world">
+	  <script src="http://sample-web-server/sample-xml/js/views/hello-world/hello-world.js"/>
+    </scriptView>
+  </body>
+</atv>

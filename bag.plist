@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>javascript-url</key>
+	<string>http://sample-web-server/sample-xml/js/application.js</string>
+	<key>auth-type</key>
+	<string>js</string>
+	<key>enabled</key>
+	<string>YES</string>
+	<key>menu-title</key>
+	<string>Sample XML</string>
+	<key>merchant</key>
+	<string>sample-xml</string>
+	<key>top-shelf-url</key>
+	<string>http://sample-web-server/sample-xml/top-shelf.xml</string>
+	<key>menu-icon-url</key>
+	<dict>
+		<key>720</key>
+		<string>http://sample-web-server/sample-xml/images/icons/SampleXML@720.png</string>
+		<key>1080</key>
+		<string>http://sample-web-server/sample-xml/images/icons/SampleXML@1080.png</string>
+	</dict>
+	<key>menu-icon-url-version</key>
+	<string>1.0</string>
+	<key>screensaver</key>
+	<array>
+		<dict>
+			<key>preview-image</key>
+			<dict>
+				<key>720</key>
+				<dict>
+					<key>image</key>
+					<string>http://sample-web-server/sample-xml/images/sample/icons/AmberSuds_logo_small.png</string>
+				</dict>
+				<key>1080</key>
+				<dict>
+					<key>image</key>
+					<string>http://sample-web-server/sample-xml/images/sample/icons/AmberSuds_logo_small.png</string>
+				</dict>
+			</dict>
+			<key>canonical-name</key>
+			<string>ATVFeedScreensaverPhotos</string>
+			<key>has-multiple-photo-collections</key>
+			<false />
+			<key>photo-collection-identifier</key>
+			<string>sample-xml-screensaver</string>
+			<key>preferred-order</key>
+			<integer>475</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

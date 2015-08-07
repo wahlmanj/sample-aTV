@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <scroller id="com.sample.movie-shelf">
+      <items>
+        <shelf id="shelf_0" columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                <moviePoster id="shelf_item_1" accessibilityLabel="Movie 1" featured="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/featured-movie1.png" src1080="http://sample-web-server/sample-xml/images/1080p/featured-movie1.png"/>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_2" accessibilityLabel="Movie 2" featured="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/featured-movie2.png" src1080="http://sample-web-server/sample-xml/images/1080p/featured-movie2.png"/>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_3" accessibilityLabel="Movie 3" featured="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/featured-movie3.png" src1080="http://sample-web-server/sample-xml/images/1080p/featured-movie3.png"/>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_4" accessibilityLabel="Movie 4" featured="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/featured-movie4.png" src1080="http://sample-web-server/sample-xml/images/1080p/featured-movie4.png"/>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_5" accessibilityLabel="Movie 5" featured="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/featured-movie5.png" src1080="http://sample-web-server/sample-xml/images/1080p/featured-movie5.png"/>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="Top Movies">
+          <title>Top Movies</title>
+        </collectionDivider>
+        <shelf id="shelf_1">
+          <sections>
+            <shelfSection>
+              <items>
+                <moviePoster id="shelf_item_1" accessibilityLabel="Movie 1" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 1</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie1.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie1.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>1</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_2" accessibilityLabel="Movie 2" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 2</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie2.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie2.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>2</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_3" accessibilityLabel="Movie 3" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 3</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie3.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie3.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>3</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_4" accessibilityLabel="Movie 4" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 4</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie4.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie4.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>4</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_5" accessibilityLabel="Movie 5" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 5</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie5.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie5.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>5</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_6" accessibilityLabel="Movie 6" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 6</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie6.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie6.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>6</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_7" accessibilityLabel="Movie 7" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 7</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie7.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie7.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>7</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_8" accessibilityLabel="Movie 8" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 8</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie8.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie8.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>8</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_9" accessibilityLabel="Movie 9" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 9</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie9.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie9.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>9</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_10" accessibilityLabel="Movie 10" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 10</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie10.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie10.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>10</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_11" accessibilityLabel="Movie 11" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 11</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie11.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie11.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>11</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_12" accessibilityLabel="Movie 12" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 12</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie12.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie12.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>12</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_13" accessibilityLabel="Movie 13" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 13</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie13.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie13.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>13</ordinal>
+                </moviePoster>
+                <moviePoster id="shelf_item_14" accessibilityLabel="Movie 14" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 14</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie14.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie14.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                  <ordinal>14</ordinal>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="New arrivals">
+          <title>New Arrivals</title>
+        </collectionDivider>
+        <shelf id="shelf_2">
+          <sections>
+            <shelfSection>
+              <items>
+                <moviePoster id="shelf_item_1" accessibilityLabel="Movie 1" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 1</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie1.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie1.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_2" accessibilityLabel="Movie 2" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 2</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie2.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie2.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_3" accessibilityLabel="Movie 3" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 3</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie3.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie3.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_4" accessibilityLabel="Movie 4" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 4</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie4.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie4.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_5" accessibilityLabel="Movie 5" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 5</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie5.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie5.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_6" accessibilityLabel="Movie 6" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 6</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie6.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie6.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_7" accessibilityLabel="Movie 7" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 7</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie7.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie7.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_8" accessibilityLabel="Movie 8" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 8</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie8.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie8.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_9" accessibilityLabel="Movie 9" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 9</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie9.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie9.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_10" accessibilityLabel="Movie 10" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 10</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie10.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie10.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_11" accessibilityLabel="Movie 11" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 11</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie11.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie11.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_12" accessibilityLabel="Movie 12" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 12</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie12.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie12.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_13" accessibilityLabel="Movie 13" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 13</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie13.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie13.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_14" accessibilityLabel="Movie 14" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 14</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie14.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie14.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="Top Rated">
+          <title>Top Rated</title>
+        </collectionDivider>
+        <shelf id="shelf_3">
+          <sections>
+            <shelfSection>
+              <items>
+                <moviePoster id="shelf_item_1" accessibilityLabel="Movie 1" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 1</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie1.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie1.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_2" accessibilityLabel="Movie 2" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 2</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie2.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie2.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_3" accessibilityLabel="Movie 3" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 3</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie3.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie3.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_4" accessibilityLabel="Movie 4" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 4</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie4.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie4.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_5" accessibilityLabel="Movie 5" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 5</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie5.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie5.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_6" accessibilityLabel="Movie 6" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 6</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie6.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie6.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_7" accessibilityLabel="Movie 7" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 7</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie7.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie7.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_8" accessibilityLabel="Movie 8" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 8</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie8.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie8.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_9" accessibilityLabel="Movie 9" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 9</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie9.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie9.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_10" accessibilityLabel="Movie 10" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 10</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie10.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie10.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_11" accessibilityLabel="Movie 11" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 11</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie11.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie11.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_12" accessibilityLabel="Movie 12" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 12</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie12.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie12.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_13" accessibilityLabel="Movie 13" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 13</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie13.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie13.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_14" accessibilityLabel="Movie 14" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Movie 14</title>
+                  <image src720="http://sample-web-server/sample-xml/images/1080p/movie14.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie14.png"/>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </items>
+    </scroller>
+  </body>
+</atv>

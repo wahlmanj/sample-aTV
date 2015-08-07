@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+  <body>
+    <topShelf id="com.sample.top-shelf" columnCount="5" refreshInterval="30">
+      <sections>
+        <shelfSection>
+          <title>Section 1</title>
+          <items>
+            <baseballScorePoster id="game1" onSelect="atvutils.loadURL('http://gdx.mlb.com/components/game/mlb/year_2011/month_10/day_27/gid_2011_10_27_texmlb_slnmlb_1/feed_selection.plist')" onPlay="atvutils.loadURL('http://gdx.mlb.com/components/game/mlb/year_2011/month_10/day_27/gid_2011_10_27_texmlb_slnmlb_1/feed_selection.plist')" accessibilityLabel="Game 1">
+              <title>Bottom of the 9th</title>
+              <subTitle>LIVE</subTitle>
+              <leftImage>http://sample-web-server/sample-xml/images/team1-98x98.png</leftImage>
+              <rightImage>http://sample-web-server/sample-xml/images/team2-98x98.png</rightImage>
+              <imageSeparatorText>VS</imageSeparatorText>
+              <leftScore>8</leftScore>
+              <leftScoreText>visitors</leftScoreText>
+              <rightScore>1</rightScore>
+              <rightScoreText>home</rightScoreText>
+              <backgroundImage>http://sample-web-server/sample-xml/images/posterbg_blue.png</backgroundImage>
+            </baseballScorePoster>
+            <baseballScorePoster id="game2" onSelect="atvutils.loadURL('http://gdx.mlb.com/components/game/mlb/year_2011/month_10/day_27/gid_2011_10_27_texmlb_slnmlb_1/feed_selection.plist')" onPlay="atvutils.loadURL('http://gdx.mlb.com/components/game/mlb/year_2011/month_10/day_27/gid_2011_10_27_texmlb_slnmlb_1/feed_selection.plist')" accessibilityLabel="Game 2">
+              <title>Bottom of the 9th</title>
+              <subTitle>LIVE</subTitle>
+              <leftImage>http://sample-web-server/sample-xml/images/team1-98x98.png</leftImage>
+              <rightImage>http://sample-web-server/sample-xml/images/team2-98x98.png</rightImage>
+              <imageSeparatorText>VS</imageSeparatorText>
+              <leftScore>8</leftScore>
+              <leftScoreText>visitors</leftScoreText>
+              <rightScore>1</rightScore>
+              <rightScoreText>home</rightScoreText>
+              <backgroundImage required="true">http://sample-web-server/sample-xml/images/posterbg_blue.png</backgroundImage>
+              <onBaseImage required="true">http://sample-web-server/sample-xml/images/baserunners-000.png</onBaseImage>
+            </baseballScorePoster>
+          </items>
+        </shelfSection>
+      </sections>
+    </topShelf>
+  </body>
+</atv>

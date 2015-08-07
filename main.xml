@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://209.222.29.73/apple/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <listWithPreview id="com.sample.main">
+      <header>
+        <simpleHeader accessibilityLabel="Sample-xml main">
+          <title>Main</title>
+          <subtitle>sample-xml</subtitle>
+        </simpleHeader>
+      </header>
+      <preview>
+        <paradePreview inOrder="true">
+          <image src720="http://209.222.29.73/apple/sample-xml/images/720p/movie1.png" src1080="http://209.222.29.73/apple/sample-xml/images/1080p/movie1.png"/>
+          <image src720="http://209.222.29.73/apple/sample-xml/images/720p/movie2.png" src1080="http://209.222.29.73/apple/sample-xml/images/1080p/movie2.png"/>
+          <image src720="http://209.222.29.73/apple/sample-xml/images/720p/movie3.png" src1080="http://209.222.29.73/apple/sample-xml/images/1080p/movie3.png"/>
+          <image src720="http://209.222.29.73/apple/sample-xml/images/720p/movie4.png" src1080="http://209.222.29.73/apple/sample-xml/images/1080p/movie4.png"/>
+          <image src720="http://209.222.29.73/apple/sample-xml/images/720p/movie5.png" src1080="http://209.222.29.73/apple/sample-xml/images/1080p/movie5.png"/>
+          <image src720="http://209.222.29.73/apple/sample-xml/images/720p/movie6.png" src1080="http://209.222.29.73/apple/sample-xml/images/1080p/movie6.png"/>
+          <image src720="http://209.222.29.73/apple/sample-xml/images/720p/movie7.png" src1080="http://209.222.29.73/apple/sample-xml/images/1080p/movie7.png"/>
+        </paradePreview>
+      </preview>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem id="list_0" accessibilityLabel="Movie Shelf" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/movie-shelf.xml');">
+                <label>Movie Shelf</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_1" accessibilityLabel="TV Shelf" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/tv-shelf.xml');">
+                <label>TV Shelf</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_2" accessibilityLabel="Movie Showcase" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/movie-showcase-grid.xml');">
+                <label>Movie Showcase</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_3" accessibilityLabel="Movie Grid" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/movie-grid.xml');">
+                <label>Movie Grid</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_4" accessibilityLabel="Shelf + Grid" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/movie-shelf-grid.xml');">
+                <label>Shelf + Grid</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_5" accessibilityLabel="Shelf + Grid: No Outline" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/movie-shelf-no-poster-outline.xml');">
+                <label>Shelf + Grid: No Outline</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_6" accessibilityLabel="Paged Grid" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/paged-grid.xml');">
+                <label>Paged Grid</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_7" accessibilityLabel="Room" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/tv-room.xml');">
+                <label>Room</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_8" accessibilityLabel="Previews" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/previews.xml');">
+                <label>Previews</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_9" accessibilityLabel="Movie Detail" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/movie.xml');">
+                <label>Movie Detail</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_10" accessibilityLabel="TV Season" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/tv-season.xml');">
+                <label>TV Season</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_11" accessibilityLabel="TV Episode Detail" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/tv-episode.xml');">
+                <label>TV Episode Detail</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_12" accessibilityLabel="Menu Items" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/menu-items.xml');">
+                <label>Menu Items</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_13" accessibilityLabel="Menu Items With Sections" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/menu-items-with-sections.xml');">
+                <label>Menu Items With Sections</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_14" accessibilityLabel="Option List" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/option-list.xml');">
+                <label>Option List</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_15" accessibilityLabel="Option Dialog" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/option-dialog.xml');">
+                <label>Option Dialog</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_16" accessibilityLabel="List Scroller Split" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/list-scroller-split.xml');">
+                <label>List Scroller Split</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_17" accessibilityLabel="Navigation Bar" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/navigation-bar.xml');">
+                <label>Navigation Bar</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_18" accessibilityLabel="Tumbler Navigation" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/tumbler1.xml');">
+                <label>Tumbler Navigation</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_19" accessibilityLabel="Tab Navigation" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/tab1.xml');">
+                <label>Tab Navigation</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_20" accessibilityLabel="Subtitle Tumbler" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/tumbler-subtitle-tumbles-season1.xml');">
+                <label>Subtitle Tumbler</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_21" accessibilityLabel="Search" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/search.xml');">
+                <label>Search</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_22" accessibilityLabel="Video Playback" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/video-playback.xml');">
+                <label>Video Playback</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_23" accessibilityLabel="Video Clips" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/video-clips.xml');">
+                <label>Video Clips</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_24" accessibilityLabel="Authentication" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/authentication/main.xml');">
+                <label>Authentication</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_25" accessibilityLabel="JavaScript Examples" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/js/javascript.xml');">
+                <label>JavaScript Examples</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_26" accessibilityLabel="Shelf List" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/shelf-list.xml');">
+                <label>Shelf List</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_27" accessibilityLabel="Standings" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/standings.xml');">
+                <label>Standings</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_28" accessibilityLabel="Scrolling Text" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/scrolling-text.xml');">
+                <label>Scrolling Text</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_29" accessibilityLabel="Media Browser" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/mediaBrowser.xml');">
+                <label>Media Browser</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_30" accessibilityLabel="Pin Code" onSelect="atvutils.loadURL('http://209.222.29.73/apple/sample-xml/pin-code.xml');">
+                <label>Pin Code</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listWithPreview>
+  </body>
+</atv>

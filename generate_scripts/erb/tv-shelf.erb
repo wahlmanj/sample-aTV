@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<scroller id="com.sample.tv-shelf">
+			<items>
+				<shelf id="shelf_0" columnCount="5">
+					<sections>
+						<shelfSection>
+							<items>
+								<% 5.times do |x| %>
+								<squarePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Shelf item <%=x+1%>" featured="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<image src720="http://sample-web-server/sample-xml/images/720p/featured-tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/featured-tv1.png" />
+									<defaultImage>resource://16X9.png</defaultImage>
+								</squarePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<collectionDivider alignment="left" accessibilityLabel="Top tv shows">
+					<title>Top TV Shows</title>
+				</collectionDivider>
+				<shelf id="shelf_1" columnCount="6">
+					<sections>
+						<shelfSection>
+							<items>
+								<% 50.times do |x| %>
+								<squarePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Shelf item <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>TV Show <%=x+1%></title>
+									<subtitle>Episode Name</subtitle>
+									<image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png" />
+									<defaultImage>resource://Square.png</defaultImage>
+									<ordinal><%=x+1%></ordinal>
+								</squarePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<collectionDivider alignment="left" accessibilityLabel="New TV episodes">
+					<title>New Episodes</title>
+				</collectionDivider>
+				<shelf id="shelf_2" columnCount="6">
+					<sections>
+						<shelfSection>					
+							<items>
+								<% 50.times do |x| %>
+								<squarePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Shelf item <%=x+1%>" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>TV Show <%=x+1%></title>
+									<subtitle>Episode Name</subtitle>
+									<image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png" />
+									<defaultImage>resource://Square.png</defaultImage>
+								</squarePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<collectionDivider alignment="left" accessibilityLabel="Top rated episodes">
+					<title>Top Rated Episodes</title>
+				</collectionDivider>
+				<shelf id="shelf_3" columnCount="6">
+					<sections>
+						<shelfSection>										
+							<items>
+								<% 50.times do |x| %>
+								<squarePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Shelf item <%=x+1%>" alwaysShowTitles="false" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>TV Show <%=x+1%></title>
+									<subtitle>Episode Name</subtitle>
+									<image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png" />
+									<defaultImage>resource://Square.png</defaultImage>
+								</squarePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+			</items>
+		</scroller>
+	</body>
+</atv>

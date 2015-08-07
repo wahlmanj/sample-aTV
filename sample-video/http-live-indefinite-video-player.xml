@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <videoPlayer id="com.sample.video-player">
+      <httpLiveStreamingVideoAsset id="ABCD1234" indefiniteDuration="true">
+        <mediaURL>http://liveips.nasa.gov.edgesuite.net/msfc/nasatv.m3u8</mediaURL>
+        <title>NASA TV</title>
+        <description>NASA TV Live Streaming</description>
+        <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+      </httpLiveStreamingVideoAsset>
+    </videoPlayer>
+  </body>
+</atv>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+		<script src="http://sample-web-server/sample-xml/generate_scripts/js/_Ajax.js"/>
+		<script src="http://sample-web-server/sample-xml/js/testingcode.js"/>
+	</head>
+	<body>
+		<viewWithNavigationBar id="com.sample.navigation-bar" onNavigate="handleNavbarNavigate( event )">
+			<navigation currentIndex="0">
+				<navigationItem id="nav1">
+					<title>Movie Grid</title>
+					<url>http://sample-web-server/sample-xml/movie-grid.xml</url>
+				</navigationItem>
+				<navigationItem id="nav2">
+					<title>TV Room</title>
+					<url>http://sample-web-server/sample-xml/tv-room.xml</url>
+				</navigationItem>
+				<navigationItem id="nav3">
+					<title>Media Browser</title>
+					<url>http://sample-web-server/sample-xml/mediaBrowser.xml</url>
+				</navigationItem>
+				<navigationItem id="nav4">
+					<title>Search</title>
+					<url>http://sample-web-server/sample-xml/search.xml</url>
+				</navigationItem>
+			</navigation>
+		</viewWithNavigationBar>
+	</body>
+</atv>
+

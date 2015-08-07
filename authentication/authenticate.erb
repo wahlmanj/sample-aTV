@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<body>
+		<authentication id="com.sample.authenticate">
+			<image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+			<accountNameTitle>Sample Name Title</accountNameTitle>
+			<accountNameInstructions>Account name instructions.</accountNameInstructions>
+			<accountNameLabel>Username</accountNameLabel>
+			<accountNameFootnote>Sample name footnote</accountNameFootnote>
+			<accountPasswordTitle>Sample Password Title</accountPasswordTitle>
+			<accountPasswordInstructions>Password instructions.</accountPasswordInstructions>
+			<accountPasswordLabel>Password</accountPasswordLabel>
+			<connectionString>Connecting to Sample&#8230;</connectionString>
+			<failureTitle>Sample Failure Title</failureTitle>
+			<failureInstructions>Sample authentication failure instructions.</failureInstructions> 
+			<% if urlToLoadAfterAuth %>
+			<urlToLoadAfterAuth><%=urlToLoadAfterAuth%></urlToLoadAfterAuth>
+			<% end %>
+		</authentication>
+	</body>
+</atv>

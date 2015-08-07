@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<scroller id="com.sample.movie-shelf">
+			<items>
+				<shelf id="shelf_0" columnCount="5">
+					<sections>
+						<shelfSection>
+							<items>
+								<% 5.times do |x| %>
+								<moviePoster id="shelf_item_<%=x+1%>" showOutline="false" accessibilityLabel="Movie <%=x+1%>" featured="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<image src720="http://sample-web-server/sample-xml/images/720p/featured-movie-no-outline<%=x+1%>.png" src1080="http://sample-web-server/sample-xml/images/1080p/featured-movie-no-outline<%=x+1%>.png" />
+									<defaultImage>resource://16X9.png</defaultImage>
+								</moviePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<collectionDivider alignment="left" accessibilityLabel="Top Movies">
+					<title>Movie Poster</title>
+				</collectionDivider>
+				<shelf id="shelf_1">
+					<sections>
+						<shelfSection>
+							<items>
+								<% 14.times do |x| %>
+								<moviePoster id="shelf_item_<%=x+1%>" showOutline="false" accessibilityLabel="Movie <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>Movie <%=x+1%></title>
+									<image src720="http://sample-web-server/sample-xml/images/7200p/movie-no-outline<%=x+1%>.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie-no-outline<%=x+1%>.png" />
+									<defaultImage>resource://Poster.png</defaultImage>
+									<ordinal><%=x+1%></ordinal>
+								</moviePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<collectionDivider alignment="left" accessibilityLabel="New arrivals">
+					<title>Square Poster</title>
+				</collectionDivider>
+				<shelf id="shelf_2" columnCount="5">
+					<sections>
+						<shelfSection>					
+							<items>
+								<% 12.times do |x| %>
+								<squarePoster showOutline="false" alwaysShowTitles="true" id="item_<%=x+1%>" accessibilityLabel="TV Show <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>TV Show <%=x+1%></title>
+									<subtitle>Episode Name</subtitle>
+									<image src720="http://sample-web-server/sample-xml/images/720p/tv-no-outline<%=x+1%>.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv-no-outline<%=x+1%>.png" />
+									<defaultImage>resource://Square.png</defaultImage>
+									<%
+									if x<=10
+										numberBadgeCount = x*10+1
+									else
+										numberBadgeCount = 0
+										end
+									%>
+									<badgeCount><%=numberBadgeCount%></badgeCount>
+								</squarePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+				<% @hashRows.each do |row| %>
+			        <collectionDivider alignment="left" accessibilityLabel="<%=row["TITLE"]%>">
+			          <title><%= row["TITLE"] %></title>
+			        </collectionDivider>
+					<% if row["TITLE"].end_with?("Shelf") %>
+						<% numItems = 14 %>		
+						<shelf id="shelf_<%=@hashRows.index(row)%>" columnCount="5">
+							<sections>
+								<shelfSection>
+					<% else %>
+						<% numItems = 20 %>
+						<grid id="grid_<%=@hashRows.index(row)%>" columnCount="5">
+					<% end %>
+
+								<items>
+									<% numItems.times do |x| %>
+										<% if row["TITLE"].start_with?("16x9") %>
+											<% posterType = 'sixteenByNinePoster'; imageURL = '16x9-no-outline.png'; defaultImage = 'resource://16x9.png' %>
+										<% else %>
+											<% posterType = 'fourByThreePoster'; imageURL = '4x3-no-outline.png'; defaultImage = 'resource://4x3.png' %>
+										<% end %>
+
+										<<%=posterType%> id="item_<%=@hashRows.index(row)%>_<%=x+1%>" showOutline="false" accessibilityLabel="Poster item <%=x+1%>" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+											<title>Video Clip <%=x+1%></title>
+											<subtitle>Subtitle</subtitle>
+											<image src720="http://sample-web-server/sample-xml/images/720p/<%= imageURL %>" src1080="http://sample-web-server/sample-xml/images/1080p/<%= imageURL %>" />
+											<defaultImage><%=defaultImage%></defaultImage>
+										</<%=posterType%>>
+									<% end %>
+								</items>
+
+					<% if row["TITLE"].end_with?("Shelf") %>
+								</shelfSection>
+							</sections>
+						</shelf>
+					<% else %>
+						</grid>
+					<% end %>
+
+				<% end %>
+			</items>
+		</scroller>
+	</body>
+</atv>

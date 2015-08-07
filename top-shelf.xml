@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <topShelf id="com.sample.top-shelf" columnCount="7" refreshInterval="30">
+      <sections>
+        <shelfSection>
+          <title>Section 1</title>
+          <items>
+            <moviePoster id="shelf_item_1" accessibilityLabel="Shelf item uno" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 1</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_2" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 2</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_3" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 3</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_4" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 4</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_5" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 5</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_6" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 6</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_7" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 7</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_8" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 8</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_9" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 9</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_10" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 10</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+          </items>
+        </shelfSection>
+        <shelfSection>
+          <title>Section 2</title>
+          <items>
+            <moviePoster id="shelf_item_11" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 11</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_12" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 12</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_13" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 13</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_14" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 14</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_15" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 15</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_16" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 16</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_17" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 17</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_18" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 18</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_19" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 19</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+            <moviePoster id="shelf_item_20" topShelf="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+              <title>Movie 20</title>
+              <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </moviePoster>
+          </items>
+        </shelfSection>
+      </sections>
+    </topShelf>
+  </body>
+</atv>

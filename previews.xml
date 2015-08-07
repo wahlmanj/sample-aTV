@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <listWithPreview id="com.sample.previews">
+      <header>
+        <simpleHeader accessibilityLabel="Previews">
+          <title>Previews</title>
+        </simpleHeader>
+      </header>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              
+              <oneLineMenuItem id="list_0"  accessibilityLabel="Keyed preview with square artwork">
+                <label>Keyed Preview with Square Artwork</label>
+                <preview>
+                  <keyedPreview>
+                    <title>Title</title>
+                    <summary>Summary text goes here. The summary length will be capped. Summary text goes here. The summary length will be capped.</summary>
+                    <rating>TV-Y7</rating>
+                    <image>http://sample-web-server/sample-xml/images/tv1.png</image>
+                    <footnote>Footnote text for things like copyright text</footnote>
+                    <metadataKeys>
+                      <label>label 1</label>
+                      <label>label 2</label>
+                      <label>label 3</label>
+                    </metadataKeys>
+                    <metadataValues>
+                      <label>metadata 1</label>
+                      <label>metadata 2</label>
+                      <label>metadata 3</label>
+                    </metadataValues>
+                  </keyedPreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_1" accessibilityLabel="Keyed Preview with Movie Poster Artwork">
+                <label>Keyed Preview with Movie Poster Artwork</label>
+                <preview>
+                  <keyedPreview>
+                    <title>Title</title>
+                    <summary>Summary text goes here. The summary length will be capped. Summary text goes here. The summary length will be capped.</summary>
+                    <rating>PG-13</rating>
+                    <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+                    <footnote>Footnote text for things like copyright text</footnote>
+                    <metadataKeys>
+                      <label>label 1</label>
+                      <label>label 2</label>
+                      <label>label 3</label>
+                    </metadataKeys>
+                    <metadataValues>
+                      <label>metadata 1</label>
+                      <label>metadata 2</label>
+                      <label>metadata 3</label>
+                    </metadataValues>
+                  </keyedPreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_2" accessibilityLabel="Keyed Preview with 16x9 Artwork">
+                <label>Keyed Preview with 16x9 Artwork</label>
+                <preview>
+                  <keyedPreview>
+                    <title>Title</title>
+                    <rightLabel>Right Title</rightLabel>
+                    <summary>Summary text goes here. The summary length will be capped. Summary text goes here. The summary length will be capped.</summary>
+                    <image>http://sample-web-server/sample-xml/images/16x9.png</image>
+                    <footnote>Footnote text for things like copyright text</footnote>
+                    <metadataKeys>
+                      <label>label 1</label>
+                      <label>label 2</label>
+                      <label>label 3</label>
+                    </metadataKeys>
+                    <metadataValues>
+                      <label>metadata 1</label>
+                      <label>metadata 2</label>
+                      <label>metadata 3</label>
+                    </metadataValues>
+                  </keyedPreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_3" accessibilityLabel="Long Description Preview">
+                <label>Long Description Preview</label>
+                <preview>
+                  <longDescriptionPreview>
+                    <title>Title</title>
+                    <summary><![CDATA[Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></summary>
+                    <rating>R</rating>
+                    <image>http://sample-web-server/sample-xml/images/tv1.png</image>
+                    <footnote>Footnote text for things like copyright text</footnote>
+                    <metadata>
+                      <label>label 1</label>
+                      <label>label 2</label>
+                      <label>label 3</label>
+                      <label>label 4</label>
+                      <mediaBadges>
+                        <videoFormat>HD</videoFormat>
+                        <audioFormat>dolbyDigital</audioFormat>
+                        <closedCaption/>
+                      </mediaBadges>
+                      <starRating>
+                        <percentage>80.5</percentage>
+                        <rightLabel>(466)</rightLabel>
+                      </starRating>
+                    </metadata>
+                  </longDescriptionPreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_4" accessibilityLabel="Cross Fade">
+                <label>Cross Fade</label>
+                <preview>
+                  <crossFadePreview>
+                    <image>http://sample-web-server/sample-xml/images/parade1.jpg</image>
+                    <image>http://sample-web-server/sample-xml/images/parade2.jpg</image>
+                    <image>http://sample-web-server/sample-xml/images/parade3.jpg</image>
+                    <image>http://sample-web-server/sample-xml/images/parade4.jpg</image>
+                    <image>http://sample-web-server/sample-xml/images/parade5.jpg</image>
+                  </crossFadePreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="image_preview" accessibilityLabel="Image preview">
+                <label>Image</label>
+                <preview>
+                  <imagePreview>
+                    <image required="true">http://sample-web-server/sample-xml/images/parade1.jpg</image>
+                  </imagePreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_5" accessibilityLabel="Continuously Randomized parade">
+                <label>Parade: Continuously Randomize</label>
+                <preview>
+                  <paradePreview>
+                    <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie2.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie3.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie4.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie5.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie6.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie7.png</image>
+                  </paradePreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_6" accessibilityLabel="Random once, then in order parade">
+                <label>Parade: Serialize Images (randomize once, then in order)</label>
+                <preview>
+                  <paradePreview shuffle="true" inOrder="true">
+                    <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie2.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie3.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie4.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie5.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie6.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie7.png</image>
+                  </paradePreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_7" accessibilityLabel="In order parade">
+                <label>Parade: In Order</label>
+                <preview>
+                  <paradePreview inOrder="true">
+                    <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie2.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie3.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie4.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie5.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie6.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie7.png</image>
+                  </paradePreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_8" accessibilityLabel="Media preview">
+                <label>General media preview</label>
+                <preview>
+                  <mediaPreview inOrder="true">
+                    <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie2.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie3.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie4.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie5.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie6.png</image>
+                    <image>http://sample-web-server/sample-xml/images/movie7.png</image>
+                  </mediaPreview>
+                </preview>
+              </oneLineMenuItem>
+              
+              <oneLineMenuItem id="list_9" accessibilityLabel="Baseball Preview">
+                <label>Baseball Preview</label>
+                <preview>
+                  <baseballLineScorePreview>
+				    				<leftLabel>Team 1 vs Team 2</leftLabel>
+										<rightLabel>Right Label</rightLabel>
+										<banners>
+											<headToHeadBanner>
+												<backgroundImage>http://sample-web-server/sample-xml/images/16x9.png</backgroundImage>
+												<leftImage>http://sample-web-server/sample-xml/images/team1-600x600.png</leftImage>
+												<rightImage>http://sample-web-server/sample-xml/images/team2-600x600.png</rightImage>
+												<imageSeparatorText>VS</imageSeparatorText>
+											</headToHeadBanner>
+											<imageWithLabels>
+												<image>http://sample-web-server/sample-xml/images/video-highlight1.jpg</image>
+												<labels>
+													<label>Label 1</label>
+													<label>Label 2</label>
+													<label>Label 3</label>
+												</labels>
+											</imageWithLabels>
+										</banners>
+										<teamsTable>
+											<rows>
+												<row>
+													<label>T1</label>
+												</row>
+												<row>
+													<label>T2</label>
+												</row>
+											</rows>
+										</teamsTable>
+										<inningsTable>
+											<columnDefinitions>
+												<columnDefinition>
+							            <title>1</title>
+												</columnDefinition>
+							          <columnDefinition>
+							            <title>2</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>3</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>4</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>5</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>6</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>7</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>8</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>9</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>10</title>
+							          </columnDefinition>
+											</columnDefinitions>
+							        <rows>
+							          <row>
+							            <label>0</label>
+							            <label>2</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							          </row>
+							          <row>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>1</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							            <label>0</label>
+							          </row>
+											</rows>
+										</inningsTable>
+										<summaryTable>
+											<columnDefinitions>
+							          <columnDefinition>
+							            <title>R</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>H</title>
+							          </columnDefinition>
+							          <columnDefinition>
+							            <title>E</title>
+							          </columnDefinition>
+											</columnDefinitions>
+							        <rows>
+							          <row>
+							            <label>2</label>
+							            <label>7</label>
+							            <label>1</label>
+							          </row>
+							          <row>
+							            <label>4</label>
+							            <label>9</label>
+							            <label>2</label>
+							          </row>
+											</rows>
+										</summaryTable>
+				  				</baseballLineScorePreview>
+                </preview>
+              </oneLineMenuItem>
+              
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listWithPreview>
+  </body>
+</atv>

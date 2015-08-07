@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+  	<script src="http://sample-web-server/sample-xml/js/main.js"/>
+		<script src="http://sample-web-server/sample-xml/js/item-detail.js"/>
+	</head>
+	<body>
+		<itemDetail id="com.sample.movie-detail">
+			<title>No Strings Attached (2011)</title>
+			<subtitle>Paramount</subtitle>
+			<rightImage required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</rightImage>
+			<rating>TV-14</rating>
+			<summary>In this comedy, Emmay (Natalie Portman) and Adam (Ashton Kutcher) are life-long friends who almost ruin everything by having sex one morning. In order to protect their friendship, they make a pact to keep their relationship strictly &quot;no strings attached.&quot; &quot;No strings&quot; means no jealousy, no expectations, no fighting, no flowers, no baby voices. It means they can do whatever they want, whenever they want, in whatever public place they want, as long as they don&apos;t fall in love. The question becomes - who&apos;s going to fall first? And can their friendship survive?</summary>
+			<image style="moviePoster">http://sample-web-server/sample-xml/images/movie1.png</image>
+			<defaultImage>resource://Poster.png</defaultImage>
+			<footnote>© The Studio, Inc.  All Rights Reserved.</footnote>
+			<table>
+				<columnDefinitions>
+					<columnDefinition width="25" alignment="left">
+						<title>Details</title>
+					</columnDefinition>
+					<columnDefinition width="25" alignment="left">
+						<title>Actors</title>
+					</columnDefinition>
+					<columnDefinition width="25" alignment="left">
+						<title>Directors</title>
+					</columnDefinition>
+					<columnDefinition width="25" alignment="left">
+						<title>Producers</title>
+					</columnDefinition>
+				</columnDefinitions>
+				<rows>
+					<row>
+						<label>Comedy</label>
+						<label>Natalie Portman</label>
+						<label>Ivan Reitman</label>
+						<label>Ivan Reitman</label>
+					</row>
+					<row>
+						<label>Released 2011</label>
+						<label>Ashton Kutcher</label>
+						<label></label>
+						<label>Joe Medjuck</label>
+					</row>
+					<row>
+						<label>108 minutes</label>
+						<label>Kevin Kline</label>
+						<label></label>
+						<label>Gary Barber</label>
+					</row>
+					<row>
+						<label></label>
+						<label>Greta Gerwig</label>
+						<label></label>
+						<label>Roger Birnbaum</label>
+					</row>
+					<row>
+						<label></label>
+						<label>Cary Elwes</label>
+						<label></label>
+						<label>Jonathan Glickman</label>
+					</row>
+				</rows>
+			</table>
+			<centerShelf>
+				<shelf id="centerShelf" columnCount="4" center="true">
+					<sections>
+						<shelfSection>
+							<items>
+								<actionButton  id="preview" accessibilityLabel="Preview" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>Preview</title>
+									<image>resource://Preview.png</image>
+									<focusedImage>resource://PreviewFocused.png</focusedImage>
+								</actionButton>
+								<actionButton id="play" accessibilityLabel="Play No Strings Attached" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>Play</title>
+									<image>resource://Play.png</image>
+									<focusedImage>resource://PlayFocused.png</focusedImage>
+									<badge>HD</badge>
+								</actionButton>
+								<actionButton id="add" accessibilityLabel="Add to queue" onSelect="handleActionButtonClicked('add');">
+									<title>Add</title>
+									<image>resource://Queue.png</image>
+									<focusedImage>resource://QueueFocused.png</focusedImage>
+								</actionButton>
+								<actionButton id="more" accessibilityLabel="More info" onSelect="atv.showMoreInfo();">
+									<title>More</title>
+									<image>resource://More.png</image>
+									<focusedImage>resource://MoreFocused.png</focusedImage>
+								</actionButton>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+			</centerShelf>
+			<divider>
+				<smallCollectionDivider alignment="left" accessibilityLabel="Other movies you might like">
+					<title>Viewers Also Watched</title>
+				</smallCollectionDivider>
+			</divider>
+			<bottomShelf>
+				<shelf id="bottomShelf" columnCount="8">
+					<sections>
+						<shelfSection>										
+							<items>
+								<% 8.times do |x| %>
+								<moviePoster id="shelf_item_<%=x+1%>" accessibilityLabel="Related item <%=x+1%>" related="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/error-dialog.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+									<title>Movie <%=x+1%></title>
+									<image src720="http://sample-web-server/sample-xml/images/720p/movie1.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie1.png" />
+									<defaultImage>resource://Poster.png</defaultImage>
+								</moviePoster>
+								<% end %>
+							</items>
+						</shelfSection>
+					</sections>
+				</shelf>
+			</bottomShelf>
+			<moreInfo>
+	        <listScrollerSplit id="com.sample.list-scroller-split">
+		      <menu>
+		        <sections>
+		          <menuSection>
+			        <header>
+		              <textDivider alignment="left" accessibilityLabel="Actors">
+		                <title>Actors</title>
+		              </textDivider>
+		            </header>
+		            <items>
+		              <oneLineMenuItem id="list_0" accessibilityLabel="Natalie Portman">
+		                <label>Natalie Portman</label>
+		                <preview>
+		                  <link>http://sample-web-server/sample-xml/more-info-scroller-preview.xml</link>
+			            </preview>
+		              </oneLineMenuItem>
+		              <oneLineMenuItem id="list_1" accessibilityLabel="All 34 movies">
+		                <label>Ashton Kutcher</label>
+		                <preview>
+		                  <link>http://sample-web-server/sample-xml/more-info-scroller-preview.xml</link>
+			            </preview>
+		              </oneLineMenuItem>
+		            </items>
+		          </menuSection>
+		          <menuSection>
+			        <header>
+		              <textDivider alignment="left" accessibilityLabel="Categories">
+		                <title>Categories</title>
+		              </textDivider>
+		            </header>
+		            <items>
+		              <oneLineMenuItem id="list_2" accessibilityLabel="Comedy">
+		                <label>Comedy</label>
+		                <preview>
+		                  <link>http://sample-web-server/sample-xml/more-info-scroller-preview.xml</link>
+			            </preview>
+		              </oneLineMenuItem>
+		            </items>
+		          </menuSection>
+		          <menuSection>
+			        <header>
+		              <textDivider alignment="left" accessibilityLabel="Director">
+		                <title>Director</title>
+		              </textDivider>
+		            </header>
+		            <items>
+		              <oneLineMenuItem id="list_3" accessibilityLabel="Ivan Reitman">
+		                <label>Ivan Reitman</label>
+		                <preview>
+		                  <link>http://sample-web-server/sample-xml/more-info-scroller-preview.xml</link>
+			            </preview>
+		              </oneLineMenuItem>
+		            </items>
+		          </menuSection>
+		        </sections>
+		      </menu>
+		    </listScrollerSplit>
+	      </moreInfo>
+		</itemDetail>
+	</body>
+</atv>

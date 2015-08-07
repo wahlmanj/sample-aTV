@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+  <!-- Simple types -->
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="description" type="xs:string"/>
+  <xs:element name="summary" type="xs:string"/>
+  <xs:element name="subtitle" type="xs:string"/>
+  <xs:element name="footnote" type="xs:string"/>
+  <xs:element name="artworkURL" type="imageType"/>
+  <xs:element name="mediaURL" type="xs:anyURI"/>
+  <xs:element name="secondScreenURL" type="xs:string"/>
+  <xs:element name="subtitleStylesURL" type="xs:string"/>
+  <xs:element name="label" type="xs:string"/>
+  <xs:element name="label2" type="xs:string"/>
+  <xs:element name="rightLabel" type="xs:string"/>
+  <xs:element name="ordinal" type="xs:positiveInteger"/>
+  <xs:element name="badgeCount" type="xs:nonNegativeInteger"/>
+  <xs:element name="maxOrdinalDigits" type="xs:positiveInteger"/>
+  <xs:attribute name="id" type="xs:string"/>
+  <xs:attribute name="url" type="xs:anyURI"/>
+  <xs:attribute name="columnCount" type="xs:positiveInteger"/>
+  <xs:attribute name="showAllTitles" type="xs:boolean"/>
+  <xs:attribute name="fixedHeader" type="xs:boolean"/>
+  <xs:attribute name="onSelect" type="xs:string"/>
+  <xs:attribute name="onPlay" type="xs:string"/>
+  <xs:attribute name="onHoldSelect" type="xs:string"/>
+  <xs:attribute name="related" type="xs:boolean"/>
+  <xs:attribute name="featured" type="xs:boolean"/>
+  <xs:attribute name="alwaysShowTitles" type="xs:boolean"/>
+  <xs:attribute name="topShelf" type="xs:boolean"/>
+  <xs:attribute name="dimmed" type="xs:boolean"/>
+  <xs:attribute name="accessibilityLabel" type="xs:string"/>
+  <xs:attribute name="refreshInterval" type="timeIntervalSecondsType"/>
+  <xs:attribute name="volatile" type="xs:boolean"/>
+  <xs:attribute name="onVolatileReload" type="xs:string"/>
+  <xs:attribute name="onRefresh" type="xs:string"/>
+  <xs:attribute name="onItemFocused" type="xs:string"/>
+  <xs:attribute name="gridLayout" type="gridLayoutType"/>
+  <xs:attribute name="showOutline" type="xs:boolean"/>
+  
+  <xs:attribute name="cachingIdentifierBehavior" >
+    <xs:simpleType>
+      <xs:restriction base="xs:NMTOKEN">
+        <xs:enumeration value="full"/>
+        <xs:enumeration value="ignoreQueryParameter"/>
+        <xs:enumeration value="useOnlyPath"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
+  <xs:complexType name="emptyElementType"/>
+
+  <!-- stash lets you include your own XML. Any valid XML can go inside the stash. -->
+  <xs:element name="stash">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:simpleType name="gridLayoutType">
+    <xs:restriction base="xs:NMTOKEN">
+      <xs:enumeration value="square"/>
+      <xs:enumeration value="portrait"/>
+      <xs:enumeration value="landscape"/>
+      <xs:enumeration value="mixed"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="imageURLType"> 
+    <xs:union memberTypes="xs:anyURI"/>
+  </xs:simpleType>
+
+  <xs:complexType name="imageType">
+    <xs:simpleContent>
+      <xs:extension base="imageURLType">
+        <xs:attribute name="required" use="optional" type="xs:boolean"/>
+        <xs:attribute name="src1080" use="optional" type="xs:anyURI"/>
+        <xs:attribute name="src720" use="optional" type="xs:anyURI"/>
+        <xs:attribute name="src" use="optional" type="xs:anyURI"/>
+        <xs:attribute ref="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:complexType name="imageTypeWithInsets">
+    <xs:simpleContent>
+      <xs:extension base="imageType">
+        <xs:attribute name="insets" type="xs:string" use="optional"/>
+        <xs:attribute name="insets1080" type="xs:string" use="optional"/>
+        <xs:attribute name="insets720" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:complexType name="urlBadgeType">
+    <xs:simpleContent>
+      <xs:extension base="imageType">
+        <xs:attribute name="insertIndex" use="required" type="xs:nonNegativeInteger" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:complexType name="requiredImageType">
+    <xs:simpleContent>
+      <xs:extension base="imageURLType">
+        <xs:attribute name="required" use="required" type="trueBooleanType"/>
+        <xs:attribute ref="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="imageWithStyleType">
+    <xs:simpleContent>
+      <xs:extension base="imageURLType">
+        <xs:attribute name="style" use="required" type="imageStyleType"/>
+        <xs:attribute ref="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="imageStyleType">
+    <xs:restriction base="xs:NMTOKEN">
+      <xs:enumeration value="moviePoster"/>
+      <xs:enumeration value="squarePoster"/>
+      <xs:enumeration value="fourByThreePoster"/>
+      <xs:enumeration value="sixteenByNinePoster"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="alignmentType">
+    <xs:restriction base="xs:NMTOKEN">
+      <xs:enumeration value="left"/>
+      <xs:enumeration value="center"/>
+      <xs:enumeration value="right"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="contentModeType">
+    <xs:restriction base="xs:NMTOKEN">
+      <xs:enumeration value="fill"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="percentageType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="audioFormatType">
+    <xs:restriction base="xs:NMTOKEN">
+      <xs:enumeration value="dolbyDigital"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="videoFormatType">
+    <xs:restriction base="xs:NMTOKEN">
+      <xs:enumeration value="HD"/>
+      <xs:enumeration value="widescreen"/>
+      <xs:enumeration value="SD"/>
+      <xs:enumeration value="SuperHD"/>
+    </xs:restriction>
+  </xs:simpleType>
+	
+  <xs:simpleType name="freshnessType">
+    <xs:restriction base="xs:NMTOKEN">
+	  <xs:enumeration value="rotten"/>
+	  <xs:enumeration value="fresh"/>
+	  <xs:enumeration value="certifiedFresh"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="trueBooleanType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="true"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="timeIntervalSecondsType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- atv document root -->
+  <xs:element name="atv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="head" minOccurs="0"/>
+        <xs:element ref="body"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="head">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="script" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:any processContents="lax" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="script">
+    <xs:complexType>
+      <xs:attribute name="src" use="required" type="xs:anyURI"/>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="body">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="scroller"/>
+        <xs:element ref="listWithPreview"/>
+        <xs:element ref="listByNavigation"/>
+        <xs:element ref="viewWithNavigationBar"/>
+        <xs:element ref="listScrollerSplit"/>
+        <xs:element ref="itemCollectionWithImageHeader"/>
+        <xs:element ref="itemDetail"/>
+        <xs:element ref="itemDetailWithImageHeader"/>
+        <xs:element ref="dialog"/>
+        <xs:element ref="optionDialog"/>
+        <xs:element ref="preview"/>
+        <xs:element ref="videoPlayer"/>
+        <xs:element ref="relatedPlayback"/>
+        <xs:element ref="interstitialGroup"/>
+        <xs:element ref="eventGroup"/>
+        <xs:element ref="trickPlayConfig"/>
+        <xs:element ref="optionList"/>
+        <xs:element ref="search"/>
+        <xs:element ref="searchResults"/>
+        <xs:element ref="authentication"/>
+        <xs:element ref="topShelf"/>
+        <xs:element ref="standings"/>
+        <xs:element ref="scrollingText"/>
+        <xs:element name="scriptRunner" type="arrayOfScriptsType"/>
+        <xs:element name="scriptView" type="arrayOfScriptsType"/>
+        <xs:element ref="mediaBrowser"/>
+        <xs:element name="popUpMenu" type="menuType"/>
+		<xs:element ref="shelfList"/>
+      </xs:choice>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="arrayOfScriptsType">
+    <xs:sequence>
+      <xs:element ref="script" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute ref="id" use="required"/>
+  </xs:complexType>
+  
+  
+  <!-- Style Stuff -->
+  <xs:element name="styles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="hexColorStringType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="#([0-9a-f]{1}){3}"/>
+      <xs:pattern value="#([0-9a-f]{2}){3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:element name="color">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="hexColorStringType">
+          <xs:attribute name="name" type="xs:string"/>
+          <xs:anyAttribute processContents="lax"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  
+  <!-- Photo Stuff -->
+  <xs:element name="mediaBrowser">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="header">
+          <xs:complexType>
+            <xs:choice>
+              <xs:element ref="headerWithCountAndButtons"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="initialSelection" minOccurs="0"/>
+        <xs:element name="items" minOccurs="0">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+              <xs:element ref="photo"/>
+              <xs:element ref="video"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+      <xs:attribute ref="gridLayout" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="headerWithCountAndButtons">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element ref="subtitle" minOccurs="0"/>
+        <xs:element name="count" type="xs:positiveInteger" minOccurs="0"/>
+        <xs:element name="buttons" minOccurs="0">
+          <xs:complexType>
+            <xs:choice maxOccurs="4">
+              <xs:element ref="actionButton"/>
+              <xs:element ref="screensaverPhotosActionButton"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="screensaverPhotosActionButton">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+        <xs:element ref="subtitle" minOccurs="0"/>
+        <xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element name="focusedImage" type="imageType" minOccurs="0"/>
+        <xs:element name="badge" type="videoFormatType" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute name="photoCollectionId" use="required"/>
+      <xs:attribute ref="onSelect" use="optional"/>
+      <xs:attribute ref="onPlay" use="optional"/>
+      <xs:attribute ref="onHoldSelect" use="optional"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="photo">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="caption" type="xs:string" minOccurs="0"/>
+        <xs:element name="badges" minOccurs="0">
+          <xs:complexType>
+            <xs:all>
+              <xs:element ref="commentsBadge" minOccurs="0"/>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="assets">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="photoAsset" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+      <xs:attribute ref="onSelect" use="optional"/>
+      <xs:attribute ref="onPlay" use="optional"/>
+      <xs:attribute ref="onHoldSelect" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="video">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="caption" type="xs:string" minOccurs="0"/>
+        <xs:element name="badges" minOccurs="0">
+          <xs:complexType>
+            <xs:all>
+              <xs:element ref="commentsBadge" minOccurs="0"/>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="previewImages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="videoPreviewImage" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+      <xs:attribute ref="onSelect" use="optional"/>
+      <xs:attribute ref="onPlay" use="optional"/>
+      <xs:attribute ref="onHoldSelect" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="commentsBadge">
+    <xs:complexType>
+      <xs:attribute name="style">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="readComment"/>
+            <xs:enumeration value="unreadComment"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="photoAsset" type="imageAssetType"/>
+
+  <xs:element name="videoPreviewImage" type="imageAssetType"/>
+  
+  <xs:complexType name="imageAssetType">
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="width" type="xs:nonNegativeInteger" use="required"/>
+    <xs:attribute name="height" type="xs:nonNegativeInteger" use="required"/>
+    <xs:attribute name="src" type="xs:anyURI" use="required"/>
+  </xs:complexType>
+
+
+  <!-- Scrolling Text -->
+  <xs:element name="scrollingText">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+        <xs:element name="text" type="xs:string"/>
+        <xs:element name="buttons" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence maxOccurs="3">
+              <xs:element name="actionButton">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element ref="title"/>
+                  </xs:all>
+                  <xs:attribute ref="onSelect" use="required"/>
+                  <xs:attribute ref="id" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute name="initialSelection" type="xs:nonNegativeInteger" use="optional"/>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Standings -->
+  <xs:element name="standings">
+    <xs:complexType>
+      <xs:all>
+    		<xs:element name="header" minOccurs="0">
+          <xs:complexType>
+            <xs:choice>
+              <xs:element ref="simpleHeader"/>
+            </xs:choice>
+          </xs:complexType>
+    		</xs:element>
+        <xs:element name="items">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="standingsItem" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element ref="title"/>
+                    <xs:element name="backgroundImage" type="imageType"/>
+                    <xs:element name="table" type="standingsTableType"/>
+                  </xs:all>
+                  <xs:attribute ref="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="standingsTableType">
+    <xs:all>
+      <xs:element name="columnDefinitions">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="columnDefinition" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element ref="title" minOccurs="0"/>
+                </xs:all>
+                <xs:attribute name="width" type="percentageType" use="required"/>
+                <xs:attribute name="alignment" type="alignmentType" use="optional"/>
+                <xs:attribute ref="id" use="optional"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="rows">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="row" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:choice maxOccurs="unbounded">
+                  <xs:element ref="label"/>
+                  <xs:element name="image" type="imageType"/>
+                </xs:choice>
+                <xs:attribute ref="id" use="optional"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <!-- dialog -->
+  <xs:element name="dialog">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+        <xs:element ref="description"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- Option Dialog -->
+  <xs:element name="optionDialog">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="header"/>
+        <xs:element ref="description" minOccurs="0"/>
+        <xs:element name="menu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="initialSelection" minOccurs="0">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="row" type="xs:nonNegativeInteger"/>
+                    <xs:element name="section" type="xs:nonNegativeInteger" minOccurs="0"/>
+                  </xs:all>
+                  <xs:attribute ref="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="sections" type="menuSectionsType"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- List with Preview -->
+  <xs:element name="listWithPreview">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="header" minOccurs="0"/>
+        <xs:element ref="preview" minOccurs="0"/>
+        <xs:element ref="menu"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+	  <xs:attribute ref="refreshInterval" use="optional"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+      <xs:attribute ref="onRefresh" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- View with Navigation Bar  -->
+  <xs:element name="viewWithNavigationBar">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="navigation"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="refreshInterval" use="optional"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+      <xs:attribute ref="onRefresh" use="optional"/>
+      <xs:attribute name="onNavigate" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- List By Navigation -->
+  <xs:element name="listByNavigation">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="header" minOccurs="0"/>
+        <xs:element ref="navigation" minOccurs="0"/>
+        <xs:element ref="menu" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="refreshInterval" use="optional"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+      <xs:attribute ref="onRefresh" use="optional"/>
+      <xs:attribute name="onNavigate" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="navigation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="navigationItem" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+     <xs:attribute name="currentIndex" type="xs:nonNegativeInteger" use="optional"/>
+     <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="navigationItem">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+        <xs:element name="url" type="xs:anyURI" minOccurs="0"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+	  <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- List Scroller Split -->
+  <xs:element name="listScrollerSplit">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="header" minOccurs="0"/>
+        <xs:element ref="menu"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Item Collection with Image Header -->
+  <xs:element name="itemCollectionWithImageHeader">
+    <xs:complexType>
+      <xs:all>
+        <!-- 
+          Valid style definitions are:
+          <color name="titleColor">#rrggbb</color>
+          <color name="metadataColor">#rrggbb</color>
+        -->
+        <xs:element ref="styles" minOccurs="0"/>
+        <xs:element name="header">
+          <xs:complexType>
+            <xs:choice>
+              <xs:element ref="imageHeader"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="preview" minOccurs="0"/>
+        <xs:element ref="menu"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="refreshInterval" use="optional"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+      <xs:attribute ref="onRefresh" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Item Detail -->
+  <xs:element name="itemDetail">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+        <xs:element ref="subtitle" minOccurs="0"/>
+        <xs:element name="image" type="imageWithStyleType"/>
+        <xs:element name="defaultImage" type="imageType" minOccurs="0"/>
+        <xs:element name="rightImage" type="imageType" minOccurs="0"/>
+        <xs:element name="rating" type="xs:string" minOccurs="0"/>
+        <xs:element ref="summary"/>
+        <xs:element ref="footnote" minOccurs="0"/>
+        <xs:element ref="table" minOccurs="0"/>
+        <xs:element name="centerShelf" type="itemDetailCenterShelfType" minOccurs="0"/>
+        <xs:element name="divider" type="itemDetailDividerType" minOccurs="0"/>
+        <xs:element name="bottomShelf" type="itemDetailBottomShelfType" minOccurs="0"/>
+        <xs:element name="moreInfo" type="itemDetailMoreInfoType" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+      <xs:attribute name="verticallyCentered" use="optional" type="xs:boolean" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="itemDetailWithImageHeader">
+    <xs:complexType>
+      <xs:all>
+        <!-- 
+          Valid style definitions are:
+          <color name="titleColor">#rrggbb</color>
+          <color name="metadataColor">#rgb</color>
+        -->
+        <xs:element ref="styles" minOccurs="0"/>
+        <xs:element name="header">
+          <xs:complexType>
+            <xs:choice>
+              <xs:element ref="imageHeader"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="userRatings" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="starRating" type="starRatingType" minOccurs="0"/>
+                <xs:element name="rottenTomatoesRating" type="rottenTomatoesRatingType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element ref="subtitle" minOccurs="0"/>
+        <xs:element name="image" type="imageWithStyleType"/>
+        <xs:element name="defaultImage" type="imageType" minOccurs="0"/>
+        <xs:element name="rightImage" type="imageType" minOccurs="0"/>
+        <xs:element name="rating" type="xs:string" minOccurs="0"/>
+        <xs:element ref="summary"/>
+        <xs:element ref="footnote" minOccurs="0"/>
+        <xs:element ref="table" minOccurs="0"/>
+        <xs:element name="centerShelf" type="itemDetailCenterShelfType" minOccurs="0"/>
+        <xs:element name="divider" type="itemDetailDividerType" minOccurs="0"/>
+        <xs:element name="bottomShelf" type="itemDetailBottomShelfType" minOccurs="0"/>
+        <xs:element name="moreInfo" type="itemDetailMoreInfoType" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute name="layout" type="itemDetailLayoutType" use="optional"/>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="itemDetailLayoutType">
+    <xs:restriction base="xs:NMTOKEN">
+      <xs:enumeration value="full"/>
+      <xs:enumeration value="compact"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="itemDetailCenterShelfType">
+    <xs:all>
+      <xs:element ref="shelf"/>
+    </xs:all>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="itemDetailDividerType">
+    <xs:all>
+      <xs:element name="smallCollectionDivider" type="dividerType"/>
+    </xs:all>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="itemDetailBottomShelfType">
+    <xs:all>
+      <xs:element ref="shelf"/>
+    </xs:all>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="itemDetailMoreInfoType">
+    <xs:all>
+      <xs:element ref="listScrollerSplit"/>
+    </xs:all>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <!-- Tables -->
+  <xs:element name="table">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="columnDefinitions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="columnDefinition" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rows">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="row" type="tableRowType" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="columnDefinition">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute name="width" type="percentageType" use="required"/>
+      <xs:attribute name="alignment" type="alignmentType" use="optional"/>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="tableRowType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element ref="label"/>
+      <xs:element name="image" type="imageType"/>
+      <xs:element ref="mediaBadges"/>
+      <xs:element name="starRating" type="starRatingType"/>
+      <xs:element name="progressBar" type="progressAccessoryType"/>
+	  <xs:element name="rottenTomatoesRating" type="rottenTomatoesRatingType"/>
+    </xs:choice>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="mediaBadges">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="audioFormat" type="audioFormatType" minOccurs="0"/>
+        <xs:element name="videoFormat" type="videoFormatType" minOccurs="0"/>
+        <xs:element name="closedCaption" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element name="additionalMediaBadges" type="additionalMediaBadgesType" minOccurs="0" />
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="additionalMediaBadgesType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="urlBadge" type="urlBadgeType" />
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="starRatingType">
+    <xs:all>
+      <xs:element name="percentage" type="percentageType"/>
+      <xs:element ref="rightLabel" minOccurs="0"/>
+    </xs:all>
+    <xs:attribute ref="id" use="optional"/>
+    <xs:attribute name="hasUserSetRating" type="xs:boolean" use="optional"/>
+  </xs:complexType>
+	
+  <xs:complexType name="rottenTomatoesRatingType">
+	<xs:all>
+      <xs:element name="freshness" type="freshnessType"/>
+	  <xs:element name="percentage" type="percentageType"/>
+	</xs:all>
+  </xs:complexType>
+
+  <!-- Scroller -->
+  <xs:element name="scroller">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="header" minOccurs="0"/>
+        <xs:element name="items" type="scrollerItemsType"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+	  <xs:attribute ref="fixedHeader" use="optional"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="scrollerItemsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element ref="shelf"/>
+      <xs:element ref="grid"/>
+      <xs:element ref="pagedGrid"/>
+      <xs:element ref="showcase"/>
+      <xs:element name="collectionDivider" type="dividerType"/>
+    </xs:choice>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+  
+  <!-- Grid -->
+  <xs:element name="grid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="items" type="collectionItemsType"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="columnCount" use="optional"/>
+      <xs:attribute name="defaultSelection" type="xs:nonNegativeInteger" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Paged Grid -->
+  <xs:element name="pagedGrid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="grid" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Shelf -->
+  <xs:element name="shelf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sections" type="shelfSectionsType"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="columnCount" use="optional"/>
+      <xs:attribute name="center" type="xs:boolean" use="optional"/>
+      <xs:attribute ref="onItemFocused" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- Showcase -->
+  <xs:element name="showcase">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="initialSelection" minOccurs="0" />
+        <xs:element name="items" type="showcaseCollectionItemsType" />
+        <xs:element ref="stash" minOccurs="0" />
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Top Shelf -->
+  <xs:element name="topShelf">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="sections" type="shelfSectionsType"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="columnCount" use="optional"/>
+	  <xs:attribute ref="refreshInterval" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- Shelf List -->
+  <xs:element name="shelfList">
+	<xs:complexType>
+	  <xs:all>
+		<xs:element ref="header" minOccurs="0"/>
+	    <xs:element name="centerShelf">
+		  <xs:complexType>
+			<xs:all>
+			  <xs:element ref="shelf"/>
+			</xs:all>
+			<xs:attribute ref="id" use="optional"/>
+		  </xs:complexType>
+	    </xs:element>
+		<xs:element ref="menu" minOccurs="0"/>
+	  </xs:all>
+	  <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="volatile" use="optional"/>
+      <xs:attribute ref="onVolatileReload" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="shelfSectionsType">
+    <xs:sequence>
+      <xs:element ref="shelfSection" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="shelfSection">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element name="items" type="collectionItemsType"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="collectionItemsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="moviePoster" type="posterType"/>
+      <xs:element name="squarePoster" type="titleAlignmentPosterType"/>
+      <xs:element name="fourByThreePoster" type="titleAlignmentPosterType"/>
+      <xs:element name="sixteenByNinePoster"  type="titleAlignmentPosterType"/>
+	    <xs:element name="goldenPoster" type="posterType"/>
+      <xs:element ref="actionButton"/>
+      <xs:element ref="baseballScorePoster"/>
+    </xs:choice>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="showcaseCollectionItemsType">
+    <xs:choice maxOccurs="unbounded">
+	    <xs:element name="showcasePoster" type="showcasePosterType"/>
+    </xs:choice>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="actionButton">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+		<xs:element ref="subtitle" minOccurs="0"/>
+        <xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element name="focusedImage" type="imageType" minOccurs="0"/>
+		<xs:element name="badge" type="videoFormatType" minOccurs="0"/>
+      </xs:all>
+    <xs:attribute ref="id" use="required"/>
+    <xs:attribute ref="onSelect" use="optional"/>
+    <xs:attribute ref="onPlay" use="optional"/>
+    <xs:attribute ref="onHoldSelect" use="optional"/>
+    <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Posters -->
+  <xs:complexType name="posterType">
+    <xs:all>
+      <xs:element ref="title" minOccurs="0"/>
+      <xs:element ref="subtitle" minOccurs="0"/>
+      <xs:element name="image" type="imageType" minOccurs="0"/>
+      <xs:element name="defaultImage" type="imageType" minOccurs="0"/>
+      <xs:element ref="ordinal" minOccurs="0"/>
+      <xs:element ref="badgeCount" minOccurs="0"/>
+      <xs:element ref="stash" minOccurs="0"/>
+    </xs:all>
+    <xs:attribute ref="id" use="required"/>
+    <xs:attribute ref="related" use="optional"/>
+    <xs:attribute ref="featured" use="optional"/>
+    <xs:attribute ref="alwaysShowTitles" use="optional"/>
+    <xs:attribute ref="topShelf" use="optional"/>
+    <xs:attribute name="contentMode" type="contentModeType" use="optional"/>
+    <xs:attribute ref="onSelect" use="optional"/>
+    <xs:attribute ref="onPlay" use="optional"/>
+    <xs:attribute ref="onHoldSelect" use="optional"/>
+    <xs:attribute ref="accessibilityLabel" use="optional"/>
+    <xs:attribute ref="showOutline" use="optional"/>
+    <xs:attribute name="showReflection" type="xs:boolean" use="optional"/>
+    <xs:attribute name="acceptsFocus" type="xs:boolean" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="titleAlignmentPosterType">
+    <xs:complexContent>
+      <xs:extension base="posterType">
+        <xs:attribute name="titleAlignment" use="optional">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="center"/>
+              <xs:enumeration value="left"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  
+  <!-- Showcase Poster -->
+  <xs:complexType name="showcasePosterType">
+    <xs:all>
+      <xs:element name="image" type="imageType" minOccurs="0"/>
+      <xs:element name="defaultImage" type="imageType" minOccurs="0"/>
+      <xs:element ref="stash" minOccurs="0"/>
+    </xs:all>
+    <xs:attribute ref="id" use="required"/>
+    <xs:attribute name="contentMode" type="contentModeType" use="optional"/>
+    <xs:attribute ref="onSelect" use="optional"/>
+    <xs:attribute ref="onPlay" use="optional"/>
+    <xs:attribute ref="onHoldSelect" use="optional"/>
+    <xs:attribute ref="accessibilityLabel" use="optional"/>
+  </xs:complexType>
+
+  <!-- Headers -->
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="simpleHeader"/>
+        <xs:element ref="tumblerWithSubtitle"/>
+        <xs:element ref="tabWithTitle"/>
+        <xs:element ref="metadataHeader"/>
+        <xs:element ref="imageHeader"/>
+        <xs:element ref="imageHeaderWithButtons"/>
+      </xs:choice>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="simpleHeader">
+    <xs:complexType>
+      <xs:all>
+		<xs:element ref="title" minOccurs="0"/>
+		<xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element ref="subtitle" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+	  <xs:attribute ref="accessibilityLabel" use="optional"/>
+      <xs:attribute name="horizontalAlignment" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="left"/>
+            <xs:enumeration value="right"/>
+            <xs:enumeration value="center"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="tumblerWithSubtitle">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element ref="subtitle"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+	  <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="tabWithTitle">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+        <xs:element ref="subtitle" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+	  <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="metadataHeader">
+    <xs:complexType>
+      <xs:all>
+		<xs:element ref="title"/>
+        <xs:element ref="subtitle" minOccurs="0"/>
+        <xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element name="rating" type="xs:string" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+	  <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="imageHeader">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="image" type="imageTypeWithInsets"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="imageHeaderWithButtons">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="image" type="imageTypeWithInsets"/>
+        <xs:element name="buttons" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence maxOccurs="3">
+              <xs:element name="actionButton">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element ref="title"/>
+                  </xs:all>
+                  <xs:attribute ref="onSelect" use="optional"/>
+                  <xs:attribute ref="onPlay" use="optional"/>
+                  <xs:attribute ref="onHoldSelect" use="optional"/>
+                  <xs:attribute ref="id" use="required"/>
+                  <xs:attribute ref="accessibilityLabel" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="dividerType">
+    <xs:all>
+      <xs:element ref="title"/>
+    </xs:all>
+    <xs:attribute name="alignment" type="alignmentType" use="optional"/>
+    <xs:attribute ref="id" use="optional"/>
+	<xs:attribute ref="accessibilityLabel" use="optional"/>
+
+  </xs:complexType>
+
+  <!-- Previews -->
+  <xs:element name="preview">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="paradePreview"/>
+        <xs:element ref="imagePreview"/>
+        <xs:element ref="crossFadePreview"/>
+        <xs:element ref="mediaPreview"/>
+        <xs:element ref="keyedPreview"/>
+        <xs:element ref="longDescriptionPreview"/>
+        <xs:element ref="scrollerPreview"/>
+		<xs:element ref="baseballLineScorePreview"/>
+        <xs:element name="link" type="xs:anyURI"/>
+      </xs:choice>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="paradePreview">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="image" type="imageType" minOccurs="6" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="inOrder" use="optional" type="xs:boolean"/>
+      <xs:attribute name="shuffle" use="optional" type="xs:boolean"/>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="crossFadePreview">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="image" type="imageType" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="imagePreview">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="image" type="requiredImageType"/>
+        <xs:element ref="label" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="mediaPreview">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="image" type="imageType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="inOrder" use="optional" type="xs:boolean"/>
+      <xs:attribute name="shuffle" use="optional" type="xs:boolean"/>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="keyedPreview">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+        <xs:element ref="rightLabel" minOccurs="0"/>
+        <xs:element ref="summary"/>
+        <xs:element name="image" type="imageType"/>
+        <xs:element name="rating" type="xs:string" minOccurs="0"/>
+        <xs:element ref="footnote" minOccurs="0"/>
+        <xs:element name="metadataKeys" type="sequenceOfLabelsType" minOccurs="0"/>
+        <xs:element name="metadataValues" type="sequenceOfLabelsType" minOccurs="0"/>
+        <xs:element name="likeDislikeCounts" type="likeDislikeType" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="sequenceOfLabelsType">
+    <xs:sequence>
+      <xs:element ref="label" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="likeDislikeType">
+    <xs:all>
+      <xs:element name="likeCount" type="xs:nonNegativeInteger" />
+      <xs:element name="dislikeCount" type="xs:nonNegativeInteger" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:element name="longDescriptionPreview">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title"/>
+        <xs:element ref="summary"/>
+        <xs:element name="image" type="imageType"/>
+        <xs:element name="rating" type="xs:string" minOccurs="0"/>
+        <xs:element ref="footnote" minOccurs="0"/>
+        <xs:element name="metadata" type="longDescriptionMetadataType" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="longDescriptionMetadataType">
+    <xs:sequence>
+      <xs:element name="mainLabel" type="xs:string" minOccurs="0"/>
+      <xs:element ref="label" maxOccurs="5"/>
+      <xs:element ref="mediaBadges" minOccurs="0"/>
+      <xs:element name="starRating" type="starRatingType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="scrollerPreview">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="header" minOccurs="0"/>
+        <xs:element name="items" type="scrollerItemsType"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Menus and menu items -->
+  <xs:element name="menu" type="menuType"/>
+  
+  <xs:complexType name="menuType">
+    <xs:sequence>
+      <xs:choice minOccurs="0">
+        <xs:element ref="initialSelection"/>
+        <xs:element name="initialSelection">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="row" type="xs:nonNegativeInteger"/>
+              <xs:element name="section" type="xs:nonNegativeInteger" minOccurs="0"/>
+              <xs:element name="relevanceDate" type="xs:dateTime" minOccurs="0"/>
+            </xs:all>
+            <xs:attribute ref="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:element name="sections" type="menuSectionsType"/>
+    </xs:sequence>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="initialSelection">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="indexPath">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="index" type="xs:nonNegativeInteger" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="relevanceDate" type="xs:dateTime" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="menuSectionsType">
+    <xs:sequence>
+      <xs:element ref="menuSection" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="menuSection">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="header" type="menuSectionHeaderType" minOccurs="0"/>
+        <xs:element name="items" type="menuItemsType"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="menuSectionHeaderType">
+    <xs:choice>
+      <xs:element name="textDivider" type="dividerType"/>
+      <xs:element name="horizontalDivider" type="dividerType"/>
+    </xs:choice>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="menuItemsType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="oneLineMenuItem" type="oneLineMenuItemType"/>
+      <xs:element name="twoLineMenuItem" type="twoLineMenuItemType"/>
+      <xs:element name="twoLineEnhancedMenuItem" type="twoLineMenuItemType"/>
+      <xs:element name="posterMenuItem" type="twoLineMenuItemType"/>
+      <xs:element ref="imageTextImageMenuItem"/>
+      <xs:element ref="signInSignOutMenuItem"/>
+      <xs:element ref="comboMenuItem" />
+    </xs:choice>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="oneLineMenuItemType">
+    <xs:all>
+	  <xs:element ref="label"/>
+	  <xs:element ref="rightLabel" minOccurs="0"/>
+	  <xs:element ref="ordinal" minOccurs="0"/>
+	  <xs:element ref="maxOrdinalDigits" minOccurs="0"/>
+	  <xs:element name="image" type="imageType" minOccurs="0"/>
+	  <xs:element name="defaultImage" type="imageType" minOccurs="0"/>
+	  <xs:element ref="accessories" minOccurs="0"/>
+	  <xs:element ref="preview" minOccurs="0"/>
+      <xs:element ref="stash" minOccurs="0"/>
+    </xs:all>
+    <xs:attribute ref="id" use="required"/>
+    <xs:attribute ref="onSelect" use="optional"/>
+    <xs:attribute ref="onPlay" use="optional"/>
+    <xs:attribute ref="onHoldSelect" use="optional"/>
+    <xs:attribute ref="accessibilityLabel" use="optional"/>
+    <xs:attribute ref="dimmed" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="twoLineMenuItemType">
+    <xs:all>
+	  <xs:element ref="label"/>
+	  <xs:element ref="label2" minOccurs="0"/>
+	  <xs:element ref="rightLabel" minOccurs="0"/>
+	  <xs:element ref="ordinal" minOccurs="0"/>
+	  <xs:element ref="maxOrdinalDigits" minOccurs="0"/>
+	  <xs:element name="image" type="imageType" minOccurs="0"/>
+	  <xs:element name="defaultImage" type="imageType" minOccurs="0"/>
+	  <xs:element ref="accessories" minOccurs="0"/>
+	  <xs:element ref="preview" minOccurs="0"/>
+      <xs:element ref="stash" minOccurs="0"/>
+    </xs:all>
+    <xs:attribute ref="id" use="required"/>
+    <xs:attribute ref="onSelect" use="optional"/>
+    <xs:attribute ref="onPlay" use="optional"/>
+    <xs:attribute ref="onHoldSelect" use="optional"/>
+    <xs:attribute ref="accessibilityLabel" use="optional"/>
+    <xs:attribute ref="dimmed" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="imageTextImageMenuItem">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="leftImage" type="imageType"/>
+        <xs:element name="rightImage" type="imageType"/>
+        <xs:element name="imageSeparatorText" type="xs:string"/>
+        <xs:element ref="label"/>
+        <xs:element ref="rightLabel" minOccurs="0"/>
+        <xs:element ref="preview" minOccurs="0"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="dimmed" use="optional"/>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="onSelect" use="optional"/>
+      <xs:attribute ref="onPlay" use="optional"/>
+      <xs:attribute ref="onHoldSelect" use="optional"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="signInSignOutMenuItem">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="confirmation" minOccurs="0">
+          <xs:complexType>
+            <xs:all>
+              <xs:element ref="title"/>
+              <xs:element ref="description"/>
+            </xs:all>
+          </xs:complexType>
+		</xs:element>
+        <xs:element name="signInPageURL" type="xs:anyURI" minOccurs="0"/>
+        <xs:element ref="preview" minOccurs="0"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute name="signOutExitsApp" type="xs:boolean" use="optional"/>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute ref="onSelect" use="optional"/>
+      <xs:attribute ref="onPlay" use="optional"/>
+      <xs:attribute ref="onHoldSelect" use="optional"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="comboMenuItem">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="image" type="imageType" />
+        <xs:element ref="label"/>
+        <xs:element ref="label2" minOccurs="0" />
+        <xs:element name="bottom-left-label" type="xs:string"/>
+        <xs:element name="bottom-center-label" type="xs:string" minOccurs="0" />
+        <xs:element name="likeDislikeCounts" type="likeDislikeType" minOccurs="0"/>
+        <xs:element ref="preview" minOccurs="0"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required" />
+      <xs:attribute ref="dimmed" use="optional"/>
+      <xs:attribute ref="accessibilityLabel" use="optional" />
+      <xs:attribute ref="onSelect" use="optional"/>
+      <xs:attribute ref="onPlay" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="accessories">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="arrow" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="shuffle" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="refresh" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="paired" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="lock" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="spinner" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="progressBar" type="progressAccessoryType" minOccurs="0"/>
+        <xs:element name="download" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="musicVideo" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="partiallyPlayedDot" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="unplayedDot" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="checkMark" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="rightCheckMark" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="cloud" type="emptyElementType" minOccurs="0"/>
+        <xs:element name="HD" type="emptyElementType" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="progressAccessoryType">
+      <xs:attribute name="percentage" use="required" type="percentageType"/>
+  </xs:complexType>
+
+  <!-- Video Playback -->
+  <xs:element name="videoPlayer">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="httpLiveStreamingVideoAsset"/>
+        <xs:element ref="httpFileVideoAsset"/>
+      </xs:choice>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="httpFileVideoAsset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="mediaURL"/>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element ref="description" minOccurs="0"/>
+        <xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element name="bookmarkTime" type="timeIntervalSecondsType" minOccurs="0"/>
+        <xs:element name="rating" type="xs:string" minOccurs="0"/>
+        <xs:element name="upNextPresentationTime" type="timeIntervalSecondsType" minOccurs="0"/>
+        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="optional"/>
+      <xs:attribute ref="cachingIdentifierBehavior" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="httpLiveStreamingVideoAsset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="mediaURL"/>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element ref="description" minOccurs="0"/>
+        <xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element name="bookmarkTime" type="timeIntervalSecondsType" minOccurs="0"/>
+        <xs:element ref="trickPlayConfig" minOccurs="0"/>
+        <xs:element name="eventGroup" type="eventGroupURLType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="secondScreenURL" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="subtitleStylesURL" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="bookmarkNetTime" type="timeIntervalSecondsType" minOccurs="0"/>
+        <xs:element name="startDate" type="startDateType" minOccurs="0"/>
+        <xs:element name="rating" type="xs:string" minOccurs="0"/>
+        <xs:element name="upNextPresentationTime" type="timeIntervalSecondsType" minOccurs="0"/>
+        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="indefiniteDuration" type="xs:boolean" use="optional"/>
+      <xs:attribute ref="id" use="optional"/>
+      <xs:attribute ref="cachingIdentifierBehavior" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="interstitialGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="interstitial" type="interstitialType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="interstitialType">
+    <xs:all>
+      <xs:element name="start" type="timeIntervalSecondsType"/>
+      <xs:element name="end" type="timeIntervalSecondsType"/>
+      <xs:element ref="stash" minOccurs="0"/>
+    </xs:all>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="eventGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element name="refreshInterval" type="timeIntervalSecondsType"/>
+        <xs:element name="startDate" type="startDateType" minOccurs="0"/>
+        <xs:element name="event" type="eventType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="showChapterMarkers" type="xs:boolean" use="optional"/>
+      <xs:attribute name="showDescriptionOnChapterSkip" type="xs:boolean" use="optional"/>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="eventType">
+    <xs:all>
+      <xs:element name="start" type="xs:dateTime"/>
+      <xs:element name="end" type="xs:dateTime" minOccurs="0"/>
+      <xs:element ref="title"/>
+      <xs:element ref="description"/>
+      <xs:element name="image" type="imageType" minOccurs="0"/>
+      <xs:element ref="stash" minOccurs="0"/>
+    </xs:all>
+    <xs:attribute ref="id" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="eventGroupURLType">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attribute name="required" use="optional" type="xs:boolean"/>
+        <xs:attribute ref="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="startDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:dateTime">
+        <xs:attribute name="beginPlaybackAtStartDate" use="optional" type="xs:boolean"/>
+        <xs:attribute ref="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:element name="trickPlayConfig">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="frameTimeDifference" type="timeIntervalSecondsType"/>
+        <xs:element name="count" type="xs:positiveInteger"/>
+        <xs:element name="url" type="xs:anyURI"/>
+        <xs:element name="oneBasedNamingScheme" type="xs:boolean"/>
+        <xs:element name="thumbnailNameFormat" type="xs:string"/>
+        <xs:element ref="stash" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="relatedPlayback">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0">
+          <xs:element name="upNextItem" type="relatedPlaybackVideoItemType"/>
+          <xs:element name="endTitle" type="xs:string"/>
+        </xs:choice>
+        <xs:element name="optionsMenu" type="menuType" minOccurs="0"/>
+        <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="relatedPlaybackVideoItemType">
+    <xs:choice>
+      <xs:element ref="httpLiveStreamingVideoAsset"/>
+      <xs:element ref="httpFileVideoAsset"/>
+    </xs:choice>
+    <xs:attribute ref="id" use="required"/>
+  </xs:complexType>
+
+<!-- Others -->
+
+  <xs:element name="optionList">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element ref="footnote" minOccurs="0"/>
+        <xs:element name="items" type="menuItemsType"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute name="autoSelectSingleItem" type="xs:boolean" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="search">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="header" minOccurs="0"/>
+        <xs:element name="baseURL" type="xs:anyURI"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+      <xs:attribute name="showPreview" type="xs:boolean" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="searchResults">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="menu" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="authentication">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="image" type="imageType" minOccurs="0"/>
+        <xs:element name="accountNameTitle" type="xs:string" minOccurs="0"/>
+        <xs:element name="accountNameInstructions" type="xs:string" minOccurs="0"/>
+        <xs:element name="accountNameLabel" type="xs:string" minOccurs="0"/>
+        <xs:element name="accountNameFootnote" type="xs:string" minOccurs="0"/>
+        <xs:element name="accountPasswordTitle" type="xs:string" minOccurs="0"/>
+        <xs:element name="accountPasswordInstructions" type="xs:string" minOccurs="0"/>
+        <xs:element name="accountPasswordLabel" type="xs:string" minOccurs="0"/>
+        <xs:element name="connectionString" type="xs:string" minOccurs="0"/>
+        <xs:element name="failureTitle" type="xs:string" minOccurs="0"/>
+        <xs:element name="failureInstructions" type="xs:string" minOccurs="0"/>
+        <xs:element name="urlToLoadAfterAuth" type="xs:anyURI" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Miscellaneous -->
+
+  <xs:element name="imageWithLabels">
+    <xs:complexType>
+	  <xs:all>
+	    <xs:element name="image" type="imageType"/>
+	    <xs:element name="labels" minOccurs="0">
+		  <xs:complexType>
+		    <xs:sequence>
+			  <xs:element ref="label" maxOccurs="3"/>
+		    </xs:sequence>
+		  </xs:complexType>
+	    </xs:element>
+	  </xs:all>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="headToHeadBanner">
+    <xs:complexType>
+	  <xs:all>
+	    <xs:element name="backgroundImage" type="imageType" minOccurs="0"/>
+	    <xs:element name="imageSeparatorText" type="xs:string"/>
+	    <xs:element name="leftImage" type="imageType"/>
+	    <xs:element name="rightImage" type="imageType"/>
+	  </xs:all>
+    </xs:complexType>
+  </xs:element>
+	
+  <!-- Specialized types for Flagstaff -->
+	
+  <xs:element name="baseballScorePoster">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="title" type="xs:string"/>
+        <xs:element name="subTitle" type="xs:string" minOccurs="0"/>
+        <xs:element name="leftImage" type="imageType"/>
+        <xs:element name="rightImage" type="imageType"/>
+        <xs:element name="imageSeparatorText" type="xs:string"/>
+        <xs:element name="leftScore" type="xs:string" minOccurs="0"/>
+        <xs:element name="leftScoreText" type="xs:string" minOccurs="0"/>
+        <xs:element name="rightScore" type="xs:string" minOccurs="0"/>
+        <xs:element name="rightScoreText" type="xs:string" minOccurs="0"/>
+        <xs:element name="backgroundImage" type="imageType"/>
+        <xs:element name="onBaseImage" type="imageType" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute ref="id" use="optional"/>
+      <xs:attribute ref="onSelect" use="optional"/>
+      <xs:attribute ref="onPlay" use="optional"/>
+      <xs:attribute ref="onHoldSelect" use="optional"/>
+      <xs:attribute ref="accessibilityLabel" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  	
+  <xs:element name="baseballLineScorePreview">
+	<xs:complexType>
+	  <xs:all>
+		<xs:element name="banners">
+	      <xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+			  <xs:element ref="imageWithLabels"/>
+			  <xs:element ref="headToHeadBanner"/>
+			</xs:choice>
+		  </xs:complexType>
+		</xs:element>
+		<xs:element name="leftLabel" type="xs:string"/>
+		<xs:element name="rightLabel" type="xs:string"/>
+		<xs:element name="teamsTable" type="baseballTeamsTable"/>
+		<xs:element name="inningsTable" type="baseballInningsTable"/>
+		<xs:element name="summaryTable" type="baseballSummaryTable"/>
+	  </xs:all>
+	</xs:complexType>		
+  </xs:element>
+
+  <!-- Baseball teams table is a specialization of generic table that can contain
+   only 2 rows, 1 column and each row can only have text values. -->
+  <xs:complexType name="baseballTeamsTable">
+	<xs:all>
+	  <xs:element name="rows">
+		<xs:complexType>
+		  <xs:sequence>
+			<xs:element name="row" maxOccurs="2" minOccurs="2">
+			  <xs:complexType>
+				<xs:all>
+				  <xs:element ref="label"/>
+				</xs:all>
+			  </xs:complexType>
+			</xs:element>
+		  </xs:sequence>
+		</xs:complexType>
+	  </xs:element>
+	</xs:all>
+  </xs:complexType>
+	
+  <!-- Baseball innings table is a specialization of generic table that can contain
+   only 2 rows, unbounded column and each row can only have text values. -->
+  <xs:complexType name="baseballInningsTable">
+	<xs:all>
+	  <xs:element name="columnDefinitions">
+		<xs:complexType>
+		  <xs:sequence>
+			<xs:element name="columnDefinition" minOccurs="0" maxOccurs="unbounded">
+			  <xs:complexType>
+				<xs:all>
+				  <xs:element ref="title" minOccurs="0"/>
+				</xs:all>
+				<xs:attribute ref="id" use="optional"/>
+			  </xs:complexType>
+			</xs:element>
+		  </xs:sequence>
+		</xs:complexType>
+	  </xs:element>
+	  <xs:element name="rows">
+		<xs:complexType>
+		  <xs:sequence>
+			<xs:element name="row" maxOccurs="2" minOccurs="2">
+			  <xs:complexType>
+				<xs:sequence>
+				  <xs:element ref="label" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			  </xs:complexType>
+			</xs:element>
+		  </xs:sequence>
+		</xs:complexType>
+	  </xs:element>
+	</xs:all>
+  </xs:complexType>
+	
+  <!-- Baseball summary table is a specialization of generic table that can contain
+   only 2 rows, 3 column and each row can only have text values. -->
+  <xs:complexType name="baseballSummaryTable">
+	<xs:all>
+	  <xs:element name="columnDefinitions">
+		<xs:complexType>
+		  <xs:sequence>
+			<xs:element name="columnDefinition" minOccurs="3" maxOccurs="3">
+			  <xs:complexType>
+				<xs:all>
+				  <xs:element ref="title" minOccurs="0"/>
+				</xs:all>
+				<xs:attribute ref="id" use="optional"/>
+			  </xs:complexType>
+			</xs:element>
+		  </xs:sequence>
+		</xs:complexType>
+	  </xs:element>
+	  <xs:element name="rows">
+		<xs:complexType>
+		  <xs:sequence>
+			<xs:element name="row" maxOccurs="2" minOccurs="2">
+			  <xs:complexType>
+				<xs:sequence>
+				  <xs:element ref="label" minOccurs="0" maxOccurs="3"/>
+				</xs:sequence>
+			  </xs:complexType>
+			</xs:element>
+		  </xs:sequence>
+		</xs:complexType>
+	  </xs:element>
+	</xs:all>
+  </xs:complexType>
+
+</xs:schema>

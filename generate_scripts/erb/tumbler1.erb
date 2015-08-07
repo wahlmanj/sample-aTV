@@ -1,0 +1,109 @@
+<%
+require 'date'
+year = Time.now.year
+TodaysItemIndex = Date.today.yday - 1
+StartDate = Date.parse( year.to_s + "-01-01")
+
+teamsByName = {}
+@hashRows.each do |row|
+	teamsByName[row["ABBREV"]] = row
+end
+arm=teamsByName["ARM"]
+nav=teamsByName["NAV"]
+air=teamsByName["AIR"]
+mar=teamsByName["MAR"]
+%>
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<listByNavigation id='com.sample.tumbler1' refreshInterval="10">
+			<header>
+				<tumblerWithSubtitle accessibilityLabel="Tumbler full of games">
+					<subtitle>3 Games</subtitle>
+				</tumblerWithSubtitle>
+			</header>
+			<navigation currentIndex="<%=TodaysItemIndex%>">
+				<%
+				(0..364).each do |dayNumber| 
+					if dayNumber == TodaysItemIndex
+						dateString = "Today"
+						longDateString = dateString;
+					elsif dayNumber == (TodaysItemIndex - 1)
+						dateString = "Yesterday"
+						longDateString = dateString;
+					elsif dayNumber == (TodaysItemIndex + 1)
+						dateString = "Tomorrow"
+						longDateString = dateString;
+					else
+						todaysDate = StartDate + dayNumber
+						dayTrimmed = todaysDate.strftime("%e").strip()
+						dateString = todaysDate.strftime("%a, %b #{dayTrimmed}, %Y")
+						longDateString = todaysDate.strftime("%A, %B #{dayTrimmed}, %Y");
+					end
+					
+					todaysMod = TodaysItemIndex % 2;
+					if ( dayNumber % 2 == todaysMod )
+						url = "http://sample-web-server/sample-xml/tumbler1.xml"
+					else
+						url = "http://sample-web-server/sample-xml/tumbler2.xml"
+					end
+				%>
+				<navigationItem accessibilityLabel="<%=longDateString%>">
+					<title><%=dateString%></title>
+					<url><%=url%></url>
+				</navigationItem>
+				<% end %>
+			</navigation>
+			<menu>
+				<sections>
+					<menuSection>
+						<items>
+			              <imageTextImageMenuItem id="list_0" dimmed="false" accessibilityLabel="<%=h(arm["NAME"] + " at " + nav["NAME"])%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/option-list.xml');">
+			                <leftImage src720="<%=arm["LOGO98_720"]%>" src1080="<%=arm["LOGO98_1080"]%>" />
+			                <imageSeparatorText>vs</imageSeparatorText>
+			                <rightImage src720="<%=nav["LOGO98_720"]%>" src1080="<%=nav["LOGO98_1080"]%>" />
+			                <label><%=arm["ABBREV"] + " @ " + nav["ABBREV"]%></label>
+			                <rightLabel>Final 100-200</rightLabel>
+							<preview>
+					          <crossFadePreview>
+					            <image src720="<%=arm["LOGO600_720"]%>" src1080="<%=arm["LOGO600_1080"]%>" />
+					            <image src720="<%=nav["LOGO600_720"]%>" src1080="<%=nav["LOGO600_1080"]%>" />
+					          </crossFadePreview>
+					        </preview>
+			              </imageTextImageMenuItem>
+			              <imageTextImageMenuItem id="list_1" dimmed="false" accessibilityLabel="<%=h(air["NAME"] + " at " + mar["NAME"])%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/option-list.xml');">
+							<leftImage src720="<%=air["LOGO98_720"]%>" src1080="<%=air["LOGO98_1080"]%>" />
+			                <imageSeparatorText>vs</imageSeparatorText>
+			                <rightImage src720="<%=mar["LOGO98_720"]%>" src1080="<%=mar["LOGO98_1080"]%>" />
+			                <label><%=air["ABBREV"] + " @ " + mar["ABBREV"]%></label>
+			                <rightLabel>LIVE</rightLabel>
+							<preview>
+					          <crossFadePreview>
+					            <image src720="<%=air["LOGO600_720"]%>" src1080="<%=air["LOGO600_1080"]%>" />
+					            <image src720="<%=mar["LOGO600_720"]%>" src1080="<%=mar["LOGO600_1080"]%>" />
+					          </crossFadePreview>
+					        </preview>
+			              </imageTextImageMenuItem>
+			              <imageTextImageMenuItem id="list_2" dimmed="true" accessibilityLabel="<%=h(arm["NAME"] + " at " + nav["NAME"])%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/option-list.xml');">
+			                <leftImage src720="<%=arm["LOGO98_720"]%>" src1080="<%=arm["LOGO98_1080"]%>" />
+			                <imageSeparatorText>vs</imageSeparatorText>
+			                <rightImage src720="<%=nav["LOGO98_720"]%>" src1080="<%=nav["LOGO98_1080"]%>" />
+			                <label><%=arm["ABBREV"] + " @ " + nav["ABBREV"]%></label>
+			                <rightLabel>8:00 PM ET</rightLabel>
+							<preview>
+					          <crossFadePreview>
+					            <image src720="<%=arm["LOGO600_720"]%>" src1080="<%=arm["LOGO600_1080"]%>" />
+					            <image src720="<%=nav["LOGO600_720"]%>" src1080="<%=nav["LOGO600_1080"]%>" />
+					          </crossFadePreview>
+					        </preview>
+			              </imageTextImageMenuItem>
+						</items>
+					</menuSection>
+				</sections>
+			</menu>
+		</listByNavigation>
+	</body>
+</atv>

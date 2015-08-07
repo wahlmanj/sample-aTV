@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+  	<script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <shelfList id="com.sample.self-list">
+      <header>
+        <simpleHeader accessibilityLabel="Shelf list">
+          <image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+        </simpleHeader>
+      </header>
+	  <centerShelf>
+	      <shelf id="shelf_0" onItemFocused="handleShelfListOnItemFocused( indexPath, 'shelf_0', 'list_0' )">
+	        <sections>
+	          <shelfSection>
+	            <items>
+	              <goldenPoster id="shelf_item_1" accessibilityLabel="Shelf item number one" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+	                <image>http://sample-web-server/sample-xml/images/1-golden.jpg</image>
+	              	<title>Golden 1</title>
+	              </goldenPoster>
+	              <goldenPoster id="shelf_item_2" accessibilityLabel="Shelf item number two" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+	                <image>http://sample-web-server/sample-xml/images/2-golden.jpg</image>
+	              	<title>Golden 2</title>
+	              </goldenPoster>
+	              <goldenPoster id="shelf_item_3" accessibilityLabel="Shelf item number three" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+	                <image>http://sample-web-server/sample-xml/images/3-golden.jpg</image>
+	              	<title>Golden 3</title>
+	              </goldenPoster>
+	              <goldenPoster id="shelf_item_4" accessibilityLabel="Shelf item number four" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+	                <image>http://sample-web-server/sample-xml/images/4-golden.jpg</image>
+	              	<title>Golden 4</title>
+	              </goldenPoster>
+	            </items>
+	          </shelfSection>
+	        </sections>
+	      </shelf>
+	  </centerShelf>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem id="list_0" accessibilityLabel="Changing menu item">
+                <label>Changing menu item</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_1" accessibilityLabel="Menu item 1">
+                <label>Menu Item 1</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_2" accessibilityLabel="Menu item 2">
+                <label>Menu Item 2</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </shelfList>
+  </body>
+</atv>

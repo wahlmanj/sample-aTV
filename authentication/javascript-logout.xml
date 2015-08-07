@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <dialog id="com.sample.javascript-logout">
+	  <title></title>
+	  <description>You've been logged out using atv.logout in application.js</description>
+    </dialog>
+  </body>
+</atv>

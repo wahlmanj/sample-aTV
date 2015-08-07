@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <listByNavigation id="com.sample.tab1" refreshInterval="10">
+      <header>
+        <tabWithTitle accessibilityLabel="Sample tab">
+	      <title>Sample Title</title>
+          <subtitle>Subtitle</subtitle>
+        </tabWithTitle>
+      </header>
+      <navigation currentIndex="0">
+        <navigationItem>
+          <title>Recent</title>
+          <url>http://sample-web-server/sample-xml/tab1.xml</url>
+        </navigationItem>
+        <navigationItem>
+          <title>Upcoming</title>
+          <url>http://sample-web-server/sample-xml/tab2.xml</url>
+        </navigationItem>
+      </navigation>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <imageTextImageMenuItem id="list_0" dimmed="false" accessibilityLabel="Army at Navy" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/option-list.xml');">
+                <leftImage>http://sample-web-server/sample-xml/images/team1-98x98.png</leftImage>
+                <imageSeparatorText>vs</imageSeparatorText>
+                <rightImage>http://sample-web-server/sample-xml/images/team2-98x98.png</rightImage>
+                <label>ARM @ NAV</label>
+                <rightLabel>Final 100-200</rightLabel>
+                <preview>
+                  <crossFadePreview>
+                    <image>http://sample-web-server/sample-xml/images/team1-600x600.png</image>
+                    <image>http://sample-web-server/sample-xml/images/team2-600x600.png</image>
+                  </crossFadePreview>
+                </preview>
+              </imageTextImageMenuItem>
+              <imageTextImageMenuItem id="list_1" dimmed="false" accessibilityLabel="Air Force at Marines" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/option-list.xml');">
+                <leftImage>http://sample-web-server/sample-xml/images/team3-98x98.png</leftImage>
+                <imageSeparatorText>vs</imageSeparatorText>
+                <rightImage>http://sample-web-server/sample-xml/images/team4-98x98.png</rightImage>
+                <label>AIR @ MAR</label>
+                <rightLabel>LIVE</rightLabel>
+                <preview>
+                  <crossFadePreview>
+                    <image>http://sample-web-server/sample-xml/images/team3-600x600.png</image>
+                    <image>http://sample-web-server/sample-xml/images/team4-600x600.png</image>
+                  </crossFadePreview>
+                </preview>
+              </imageTextImageMenuItem>
+              <imageTextImageMenuItem id="list_2" dimmed="true" accessibilityLabel="Army at Navy" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/option-list.xml');">
+                <leftImage>http://sample-web-server/sample-xml/images/team1-98x98.png</leftImage>
+                <imageSeparatorText>vs</imageSeparatorText>
+                <rightImage>http://sample-web-server/sample-xml/images/team2-98x98.png</rightImage>
+                <label>ARM @ NAV</label>
+                <rightLabel>8:00 PM ET</rightLabel>
+                <preview>
+                  <crossFadePreview>
+                    <image>http://sample-web-server/sample-xml/images/team1-600x600.png</image>
+                    <image>http://sample-web-server/sample-xml/images/team2-600x600.png</image>
+                  </crossFadePreview>
+                </preview>
+              </imageTextImageMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listByNavigation>
+  </body>
+</atv>

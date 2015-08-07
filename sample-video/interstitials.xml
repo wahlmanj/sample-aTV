@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <interstitialGroup>
+	  <interstitial>
+        <start>0.0</start>
+        <end>10.0</end>
+	  </interstitial>
+	  <interstitial>
+        <start>20.0</start>
+        <end>25.0</end>
+	  </interstitial>
+	  <interstitial>
+        <start>60.0</start>
+        <end>67.0</end>
+	  </interstitial>
+    </interstitialGroup>
+  </body>
+</atv>

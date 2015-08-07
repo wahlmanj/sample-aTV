@@ -1,0 +1,32 @@
+MENU_ITEM_TITLE,SELECT_URL
+Movie Shelf,http://sample-web-server/sample-xml/movie-shelf.xml
+TV Shelf,http://sample-web-server/sample-xml/tv-shelf.xml
+Movie Showcase,http://sample-web-server/sample-xml/movie-showcase-grid.xml
+Movie Grid,http://sample-web-server/sample-xml/movie-grid.xml
+Shelf + Grid,http://sample-web-server/sample-xml/movie-shelf-grid.xml
+Shelf + Grid: No Outline,http://sample-web-server/sample-xml/movie-shelf-no-poster-outline.xml
+Paged Grid,http://sample-web-server/sample-xml/paged-grid.xml
+Room,http://sample-web-server/sample-xml/tv-room.xml
+Previews,http://sample-web-server/sample-xml/previews.xml
+Movie Detail,http://sample-web-server/sample-xml/movie.xml
+TV Season,http://sample-web-server/sample-xml/tv-season.xml
+TV Episode Detail,http://sample-web-server/sample-xml/tv-episode.xml
+Menu Items,http://sample-web-server/sample-xml/menu-items.xml
+Menu Items With Sections,http://sample-web-server/sample-xml/menu-items-with-sections.xml
+Option List,http://sample-web-server/sample-xml/option-list.xml
+Option Dialog,http://sample-web-server/sample-xml/option-dialog.xml
+List Scroller Split,http://sample-web-server/sample-xml/list-scroller-split.xml
+Navigation Bar,http://sample-web-server/sample-xml/navigation-bar.xml
+Tumbler Navigation,http://sample-web-server/sample-xml/tumbler1.xml
+Tab Navigation,http://sample-web-server/sample-xml/tab1.xml
+Subtitle Tumbler,http://sample-web-server/sample-xml/tumbler-subtitle-tumbles-season1.xml
+Search,http://sample-web-server/sample-xml/search.xml
+Video Playback,http://sample-web-server/sample-xml/video-playback.xml
+Video Clips,http://sample-web-server/sample-xml/video-clips.xml
+Authentication,http://sample-web-server/sample-xml/authentication/main.xml
+JavaScript Examples,http://sample-web-server/sample-xml/js/javascript.xml
+Shelf List,http://sample-web-server/sample-xml/shelf-list.xml
+Standings,http://sample-web-server/sample-xml/standings.xml
+Scrolling Text,http://sample-web-server/sample-xml/scrolling-text.xml
+Media Browser,http://sample-web-server/sample-xml/mediaBrowser.xml
+Pin Code,http://sample-web-server/sample-xml/pin-code.xml

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<listWithPreview id='com.sample.menu-items-with-sections'>
+			<header>
+				<simpleHeader accessibilityLabel="TV season">
+					<title>Show Name</title>
+					<subtitle>Season N</subtitle>
+				</simpleHeader>
+			</header>
+			<menu>
+				<sections>
+					<menuSection>
+						<items>
+							<oneLineMenuItem id='list_0' accessibilityLabel="Add to favorites" onSelect="toggleFavorite('list_0');">
+								<label>Add to Favorites</label>
+								<preview>
+						          <longDescriptionPreview>
+				                    <title>TV Show, Season N</title>
+				                    <summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</summary>
+				                    <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png" />
+						          </longDescriptionPreview>
+						        </preview>
+							</oneLineMenuItem>
+							<oneLineMenuItem id='list_1' accessibilityLabel="Other seasons" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/error-dialog.xml');">
+								<label>Other Seasons</label>
+								<accessories>
+									<arrow/>
+								</accessories>
+								<preview>
+						          <crossFadePreview>
+						            <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png" />
+						          </crossFadePreview>
+						        </preview>
+							</oneLineMenuItem>
+							<% 5.times do |x| %>
+							<twoLineEnhancedMenuItem id="list_<%=x+2%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+			                	<label>The Episode Title</label>
+			                	<rightLabel>2/<%=x+1%>/11</rightLabel>
+			                	<ordinal><%=x+1%></ordinal>
+			                	<maxOrdinalDigits>1</maxOrdinalDigits>
+			                	<image src720="http://sample-web-server/sample-xml/images/720p/thumbnail-tv<%=x+1%>.jpg" src1080="http://sample-web-server/sample-xml/images/1080p/thumbnail-tv<%=x+1%>.jpg" />
+			                	<defaultImage>//4x3.png</defaultImage>
+								<preview>
+						          <longDescriptionPreview>
+				                    <title><%=x+1%>. The Episode Title</title>
+				                    <summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</summary>
+				                    <image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png" />
+				                    <footnote>© The Studio, Inc.  All Rights Reserved.</footnote>
+				                    <metadata>
+				                      <label>$0.99</label>
+				                      <label>Released 2/<%=x+1%>/11</label>
+				                      <label>46 minutes</label>
+				                      <label>Studio</label>
+				                    </metadata>
+						          </longDescriptionPreview>
+						        </preview>
+			                </twoLineEnhancedMenuItem>
+							<% end %>
+						</items>
+					</menuSection>
+				</sections>
+			</menu>
+		</listWithPreview>
+	</body>
+</atv>

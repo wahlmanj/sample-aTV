@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <dialog id="com.sample.dialog">
+	  <title>Simple Message</title>
+	  <description>default text</description>
+    </dialog>
+  </body>
+</atv>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <listWithPreview id="com.sample.refresh" refreshInterval="5" onRefresh="handleRefresh();">
+      <header>
+        <simpleHeader id="labelToChange" accessibilityLabel="Sample-xml main">
+          <title>Main</title>
+          <subtitle>sample-xml</subtitle>
+        </simpleHeader>
+      </header>
+      <preview>
+        <mediaPreview>
+          <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+        </mediaPreview>
+      </preview>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem id="menuToChange">
+                <label>Will update every 5 seconds</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listWithPreview>
+  </body>
+</atv>

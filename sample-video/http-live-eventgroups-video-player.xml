@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <videoPlayer id="com.sample.video-player">
+		<httpLiveStreamingVideoAsset id="ABCD1234" indefiniteDuration="true">
+			<mediaURL>http://sample-web-server/sample/sample-video/http-live-streaming-sample/prog_index.m3u8</mediaURL>
+			<title>2 Event Groups</title>
+			<description>Live video stream with two event groups defined. Press down on the remote to cycle through the event groups while the video is playing. The dates for each event should fall within the live streaming window in order to show up on the transport bar (this is why the fake events do not show up on the live stream below.)</description>
+			<image>http://sample-web-server/sample-xml/images/movie1.png</image>
+			<eventGroup>http://sample-web-server/sample-xml/sample-video/event-group1.xml</eventGroup>
+			<eventGroup>http://sample-web-server/sample-xml/sample-video/event-group2.xml</eventGroup>
+		</httpLiveStreamingVideoAsset>
+	</videoPlayer>
+  </body>
+</atv>

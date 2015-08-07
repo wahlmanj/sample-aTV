@@ -1,0 +1,24 @@
+Apple TV 5.1
+* SimpleHeader <image> now supports src, src720 or src1080 attributes.
+* Exposed a Javascript callback when the transport bar is displayed and hidden during playback.
+* Javascript text drawing now supports the fade in/out animations.
+* The <shelfList> now supports three menu buttons.
+* Implement initial selection on the <shelfList>.
+* <shelf> and <shelfList> elements now support the onItemFocused callback.
+* BlueDots are now supported on all menu items except <signInOut>.
+
+
+Apple TV 5.2
+* The image outline can now be turned off on Posters with the BOOL showOutline attribute.
+* The imagePreview now supports an optional caption (<label>) that appears underneath the image.
+* <longDescriptionPreview> Summary now supports line breaks via CDATA blocks
+* Added support for Italicized Text via <i> tags in longDescriptionPreview, keyedPreview, itemDetail and httpFileVideoAssetDescription. 
+* Added localtime support to Javascript via atv.localtime. This will return a locally formated string when passed a Date object and requested components. See developer guide.
+* Bookmarks are now supported with <httpFileVideoAsset> video player.
+* New <comboMenuItem> available. 
+* Fixed atv.DOMView bug where atv.onPageLoad and atv.onPageUnload could be called twice for each document if running in the Application context.
+* Fixed a bug where the atv.DOMView onUnload callback does not get called.
+* CenterShelf on <itemDetail> pages now supports up to 6 action buttons.
+* The Pin Code entry dialog is now available for the partner feeds (atv.PINEntry).
+* The calculated Player asset duration is now exposed in a Javascript property atv.player.currentItem.duration.
+* The <image> is now optional on a <twoLineMenuItem>.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <dialog id="com.sample.secure-resource">
+	  <title>You&apos;ve accessed the secure resource.</title>
+	  <description>If you see this page you&apos;ve provided a valid auth-token to the authentication server.</description>
+    </dialog>
+  </body>
+</atv>

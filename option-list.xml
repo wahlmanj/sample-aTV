@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <optionList id="com.sample.option-list" autoSelectSingleItem="false">
+      <footnote>This is an optional footnote.</footnote>
+      <items>
+        <oneLineMenuItem id="list_0"  accessibilityLabel="Home, via WABC" onSelect="console.log('Item 1 selected'); atvutils.loadAndSwapURL('http://sample-web-server/sample-xml/sample-video/http-live-indefinite-video-player.xml');">
+          <label>Home (WABC)</label>
+        </oneLineMenuItem>
+        <oneLineMenuItem id="list_1" accessibilityLabel="Away, via KABC" onSelect="atvutils.loadAndSwapURL('http://sample-web-server/sample-xml/sample-video/http-live-indefinite-video-player.xml');">
+          <label>Away (KABC)</label>
+        </oneLineMenuItem>
+      </items>
+    </optionList>
+  </body>
+</atv>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<listWithPreview id='com.sample.main'>
+			<header>
+				<simpleHeader accessibilityLabel="Sample-xml main">
+					<title>Main</title>
+					<subtitle>sample-xml</subtitle>
+				</simpleHeader>
+			</header>
+			<preview>
+				<paradePreview inOrder='true'>
+					<image src720="http://sample-web-server/sample-xml/images/720p/movie1.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie1.png" />
+					<image src720="http://sample-web-server/sample-xml/images/720p/movie2.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie2.png" />
+					<image src720="http://sample-web-server/sample-xml/images/720p/movie3.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie3.png" />
+					<image src720="http://sample-web-server/sample-xml/images/720p/movie4.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie4.png" />
+					<image src720="http://sample-web-server/sample-xml/images/720p/movie5.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie5.png" />
+					<image src720="http://sample-web-server/sample-xml/images/720p/movie6.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie6.png" />
+					<image src720="http://sample-web-server/sample-xml/images/720p/movie7.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie7.png" />
+				</paradePreview>
+			</preview>
+			<menu>
+				<sections>
+					<menuSection>
+						<items>
+							<% @hashRows.each do |row| %>
+							<oneLineMenuItem id='list_<%= @hashRows.index(row) %>' accessibilityLabel="<%= row["MENU_ITEM_TITLE"] %>" onSelect="atvutils.loadURL('<%= row["SELECT_URL"] %>');">
+								<label><%= row["MENU_ITEM_TITLE"] %></label>
+							</oneLineMenuItem>
+							<% end %>
+						</items>
+					</menuSection>
+				</sections>
+			</menu>
+		</listWithPreview>
+	</body>
+</atv>

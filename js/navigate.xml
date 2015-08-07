@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <listByNavigation id="com.sample.navigate" onNavigate="handleNavigate(event);">
+      <header>
+        <tumblerWithSubtitle>
+          <subtitle></subtitle>
+        </tumblerWithSubtitle>
+      </header>
+      <navigation currentIndex="0">
+        <navigationItem id="nav1">
+          <title>Nav Item 1</title>
+          <stash>
+            <sections>
+              <menuSection>
+                <items>
+                  <oneLineMenuItem id="item1">
+                    <label>Nav Item 1: Item 1</label>
+                    <preview>
+                      <link>http://sample-web-server/sample-xml/js/navigate-preview1.xml</link>
+                    </preview>
+                  </oneLineMenuItem>
+                </items>
+              </menuSection>
+            </sections>
+          </stash>
+        </navigationItem>
+        <navigationItem id="nav2">
+          <title>Nav Item 2</title>
+          <stash>
+            <sections>
+              <menuSection>
+                <items>
+                  <oneLineMenuItem id="item1">
+                    <label>Nav Item 2: Item 1</label>
+                    <preview>
+                      <link>http://sample-web-server/sample-xml/js/navigate-preview2.xml</link>
+                    </preview>
+                  </oneLineMenuItem>
+                </items>
+              </menuSection>
+            </sections>
+          </stash>
+        </navigationItem>
+        <navigationItem id="nav3">
+          <title>Nav Item 3</title>
+          <stash>
+            <sections>
+              <menuSection>
+                <items>
+                  <oneLineMenuItem id="item1">
+                    <label>Nav Item 3: Item 1</label>
+                    <preview>
+                      <link>http://sample-web-server/sample-xml/js/navigate-preview3.xml</link>
+                    </preview>
+                  </oneLineMenuItem>
+                </items>
+              </menuSection>
+            </sections>
+          </stash>
+        </navigationItem>
+        <navigationItem id="nav4">
+          <title>Nav Item 4</title>
+          <stash>
+            <sections>
+              <menuSection>
+                <items>
+                  <oneLineMenuItem id="item1">
+                    <label>Nav Item 4: Item 1</label>
+                    <preview>
+                      <link>http://sample-web-server/sample-xml/js/navigate-preview1.xml</link>
+                    </preview>
+                  </oneLineMenuItem>
+                </items>
+              </menuSection>
+            </sections>
+          </stash>
+        </navigationItem>
+      </navigation>
+      
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem id="item1">
+                <label>Nav Item 1: Item 1</label>
+                <preview>
+                  <link>http://sample-web-server/sample-xml/js/navigate-preview1.xml</link>
+                </preview>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listByNavigation>
+  </body>
+</atv>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <videoPlayer id="com.sample.video-player">
+		<httpLiveStreamingVideoAsset id="ABCD1234" indefiniteDuration="false">
+			<mediaURL>http://sample-web-server/sample/sample-video/http-live-streaming-sample/prog_index.m3u8</mediaURL>
+			<title>Interstitials</title>
+			<description>Live video stream with interstitials defined. Press up on the remote to see the interstitials while the video is playing. Override player callbacks in Javascript to prevent skipping during interstitials.</description>
+			<image>http://sample-web-server/sample-xml/images/movie1.png</image>
+			<eventGroup required="true">http://sample-web-server/sample-xml/sample-video/interstitials.xml</eventGroup>
+		</httpLiveStreamingVideoAsset>
+	</videoPlayer>
+  </body>
+</atv>

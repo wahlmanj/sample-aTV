@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <listScrollerSplit id="com.sample.list-scroller-split">
+      <header>
+        <simpleHeader accessibilityLabel="Movie list">
+          <title>Movies</title>
+        </simpleHeader>
+      </header>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem id="list_0" accessibilityLabel="Recent items">
+                <label>Recent</label>
+                <rightLabel>22</rightLabel>
+                <preview>
+                  <link>http://sample-web-server/sample-xml/list-scroller-preview.xml</link>
+	            </preview>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_1" accessibilityLabel="All 34 movies">
+                <label>All Movies</label>
+                <rightLabel>34</rightLabel>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+          <menuSection>
+	        <header>
+              <textDivider alignment="left" accessibilityLabel="Genres">
+                <title>Genres</title>
+              </textDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_2" accessibilityLabel="Action and adventure">
+                <label>Action &amp; Adventure</label>
+                <rightLabel>12</rightLabel>
+                <preview>
+                  <link>http://sample-web-server/sample-xml/list-scroller-preview.xml</link>
+	            </preview>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_3" accessibilityLabel="Classics">
+                <label>Classics</label>
+                <rightLabel>6</rightLabel>
+                <preview>
+                  <link>http://sample-web-server/sample-xml/list-scroller-preview.xml</link>
+	            </preview>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_4" accessibilityLabel="Comedies">
+                <label>Comedy</label>
+                <rightLabel>14</rightLabel>
+                <preview>
+                  <link>http://sample-web-server/sample-xml/list-scroller-preview.xml</link>
+	            </preview>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_5" accessibilityLabel="Dramas">
+                <label>Drama</label>
+                <rightLabel>3</rightLabel>
+                <preview>
+                  <link>http://sample-web-server/sample-xml/list-scroller-preview.xml</link>
+	            </preview>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listScrollerSplit>
+  </body>
+</atv>

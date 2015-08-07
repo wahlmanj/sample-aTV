@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<scroller fixedHeader="true" id="com.sample.tv-room">
+			<header>
+				<simpleHeader accessibilityLabel="TV room">
+					<title>Room Title Stays At Top</title>
+					<image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+				</simpleHeader>
+			</header>
+			<items>
+				<grid id="grid_0" columnCount="6">
+					<items>
+						<% 30.times do |x| %>
+						<squarePoster alwaysShowTitles="true" id="item_<%=x+1%>" accessibilityLabel="TV Show <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/tv-episode.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+							<title>TV Show <%=x+1%></title>
+							<subtitle>Episode Name</subtitle>
+							<image src720="http://sample-web-server/sample-xml/images/720p/tv1.png" src1080="http://sample-web-server/sample-xml/images/1080p/tv1.png" />
+							<defaultImage>resource://Square.png</defaultImage>
+							<%
+							if x<=10
+								numberBadgeCount = x*10+1
+							else
+								numberBadgeCount = 0
+								end
+							%>
+							<badgeCount><%=numberBadgeCount%></badgeCount>
+						</squarePoster>
+						<% end %>
+					</items>
+				</grid>
+			</items>
+		</scroller>
+	</body>
+</atv>

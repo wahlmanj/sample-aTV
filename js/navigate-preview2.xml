@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <preview>
+      <baseballLineScorePreview>
+				<leftLabel>Team 3 vs Team 4</leftLabel>
+				<rightLabel>Right Label</rightLabel>
+				<banners>
+					<headToHeadBanner>
+						<backgroundImage>http://sample-web-server/sample-xml/images/16x9.png</backgroundImage>
+						<leftImage>http://sample-web-server/sample-xml/images/team1-600x600.png</leftImage>
+						<rightImage>http://sample-web-server/sample-xml/images/team2-600x600.png</rightImage>
+						<imageSeparatorText>VS</imageSeparatorText>
+					</headToHeadBanner>
+					<imageWithLabels>
+						<image>http://sample-web-server/sample-xml/images/video-highlight1.jpg</image>
+						<labels>
+							<label>Label 1</label>
+							<label>Label 2</label>
+							<label>Label 3</label>
+						</labels>
+					</imageWithLabels>
+				</banners>
+				<teamsTable>
+					<rows>
+						<row>
+							<label>T3</label>
+						</row>
+						<row>
+							<label>T4</label>
+						</row>
+					</rows>
+				</teamsTable>
+				<inningsTable>
+					<columnDefinitions>
+						<columnDefinition>
+	            <title>1</title>
+						</columnDefinition>
+	          <columnDefinition>
+	            <title>2</title>
+	          </columnDefinition>
+	          <columnDefinition>
+	            <title>3</title>
+	          </columnDefinition>
+					</columnDefinitions>
+	        <rows>
+	          <row>
+	            <label>0</label>
+	            <label>2</label>
+	            <label>0</label>
+	          </row>
+	          <row>
+	            <label>0</label>
+	            <label>0</label>
+	            <label>1</label>
+	          </row>
+					</rows>
+				</inningsTable>
+				<summaryTable>
+					<columnDefinitions>
+	          <columnDefinition>
+	            <title>R</title>
+	          </columnDefinition>
+	          <columnDefinition>
+	            <title>H</title>
+	          </columnDefinition>
+	          <columnDefinition>
+	            <title>E</title>
+	          </columnDefinition>
+					</columnDefinitions>
+	        <rows>
+	          <row>
+	            <label>0</label>
+	            <label>0</label>
+	            <label>1</label>
+	          </row>
+	          <row>
+	            <label>3</label>
+	            <label>2</label>
+	            <label>1</label>
+	          </row>
+					</rows>
+				</summaryTable>
+			</baseballLineScorePreview>
+    </preview>
+  </body>
+</atv>

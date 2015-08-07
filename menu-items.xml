@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <listWithPreview id="com.sample.menu-items">
+      <header>
+        <simpleHeader accessibilityLabel="Menu items">
+          <title>Menu Items</title>
+        </simpleHeader>
+      </header>
+      <preview>
+        <crossFadePreview>
+          <image>http://sample-web-server/sample-xml/images/tv1.png</image>
+        </crossFadePreview>
+      </preview>
+      <menu>
+        <sections>
+          <menuSection>
+            <items>
+              <oneLineMenuItem accessibilityLabel="List item 1" id="list_1">
+                <label>Menu Item Title</label>
+                <stash>
+                  <data>Store data in an items stash that is specific to the item</data>
+                </stash>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 2" id="list_2">
+                <label>With Right Label</label>
+                <rightLabel>Right Label</rightLabel>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 3" id="list_3">
+                <label>Arrow</label>
+                <accessories>
+                  <arrow/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 4" id="list_4">
+                <label>Shuffle</label>
+                <accessories>
+                  <shuffle/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 5" id="list_5">
+                <label>Refresh</label>
+                <accessories>
+                  <refresh/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 6" id="list_6">
+                <label>Paired</label>
+                <accessories>
+                  <paired/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 7" id="list_7">
+                <label>Lock</label>
+                <accessories>
+                  <lock/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 8" id="list_8">
+                <label>Spinner</label>
+                <accessories>
+                  <spinner/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 9" id="list_9">
+                <label>Download</label>
+                <accessories>
+                  <download/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 10" id="list_10">
+                <label>Music Video</label>
+                <accessories>
+                  <musicVideo/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 11" id="list_11">
+                <label>Cloud</label>
+                <accessories>
+                  <cloud/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 12" id="list_12">
+                <label>Partially Played Dot</label>
+                <accessories>
+                  <partiallyPlayedDot/>
+                </accessories>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 13" id="list_13">
+                <label>BlueDot: Unplayed Dot</label>
+                <accessories>
+                  <unplayedDot/>
+                </accessories>
+                <image>http://sample-web-server/sample-xml/images/tv1.png</image>
+              </oneLineMenuItem>
+              <oneLineMenuItem accessibilityLabel="List item 14" id="list_14">
+                <label>Check Mark</label>
+                <accessories>
+                  <checkMark/>
+                </accessories>
+              </oneLineMenuItem>
+              <twoLineMenuItem accessibilityLabel="List item 15" id="list_15">
+                <label>Two Line Menu Item</label>
+                <label2>Subtext</label2>
+                <image>http://sample-web-server/sample-xml/images/tv1.png</image>
+                <stash>
+                  <data>Store data in an items stash that is specific to the item</data>
+                </stash>
+              </twoLineMenuItem>
+              <twoLineMenuItem accessibilityLabel="List item 15" id="list_15">
+                <label>BlueDot: Two Line Menu Item</label>
+                <label2>Subtext</label2>
+                <accessories>
+                  <partiallyPlayedDot/>
+                </accessories>
+                <image>http://sample-web-server/sample-xml/images/tv1.png</image>
+              </twoLineMenuItem>
+              <twoLineMenuItem accessibilityLabel="List item 15" id="list_15">
+                <label>No Image: Two Line Menu Item</label>
+                <label2>Subtext</label2>
+              </twoLineMenuItem>
+              <twoLineMenuItem accessibilityLabel="List item 15" id="list_15">
+                <label>BlueDot No Image: Two Line Menu Item</label>
+                <label2>Subtext</label2>
+                <accessories>
+                  <partiallyPlayedDot/>
+                </accessories>
+              </twoLineMenuItem>
+              <twoLineEnhancedMenuItem accessibilityLabel="List item 16" id="list_16">
+                <label>Two Line Enhanced Menu Item</label>
+                <label2>Subtext</label2>
+                <rightLabel>2/14</rightLabel>
+                <ordinal>2</ordinal>
+                <maxOrdinalDigits>1</maxOrdinalDigits>
+                <image>http://sample-web-server/sample-xml/images/16x9.png</image>
+                <defaultImage>resource://16x9.png</defaultImage>
+                <stash>
+                  <data>Store data in an items stash that is specific to the item</data>
+                </stash>
+              </twoLineEnhancedMenuItem>
+              <twoLineEnhancedMenuItem accessibilityLabel="List item 16" dimmed="true" id="list_16">
+                <label>BlueDot: Two Line Enhanced Menu Item</label>
+                <label2>Subtext</label2>
+                <rightLabel>2/14</rightLabel>
+                <ordinal>2</ordinal>
+                <maxOrdinalDigits>1</maxOrdinalDigits>
+                <accessories>
+                  <partiallyPlayedDot/>
+                </accessories>
+                <image>http://sample-web-server/sample-xml/images/16x9.png</image>
+                <defaultImage>resource://16x9.png</defaultImage>
+              </twoLineEnhancedMenuItem>
+              <posterMenuItem accessibilityLabel="List item 17" id="list_17">
+                <label>Poster Menu Item</label>
+                <label2>Subtext</label2>
+                <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+                <stash>
+                  <data>Store data in an items stash that is specific to the item</data>
+                </stash>
+              </posterMenuItem>
+              <posterMenuItem accessibilityLabel="List item 17" id="list_17">
+                <label>BlueDot: Poster Menu Item</label>
+                <label2>Subtext</label2>
+                <accessories>
+                  <unplayedDot/>
+                </accessories>
+                <image>http://sample-web-server/sample-xml/images/movie1.png</image>
+              </posterMenuItem>
+              <imageTextImageMenuItem accessibilityLabel="Army at navy" dimmed="false" id="list_18">
+                <leftImage>http://sample-web-server/sample-xml/images/team1-98x98.png</leftImage>
+                <imageSeparatorText>vs</imageSeparatorText>
+                <rightImage>http://sample-web-server/sample-xml/images/team2-98x98.png</rightImage>
+                <label>ARM @ NAV</label>
+                <rightLabel>8:00 PM ET</rightLabel>
+                <stash>
+                  <data>Store data in an items stash that is specific to the item</data>
+                </stash>
+              </imageTextImageMenuItem>
+              <comboMenuItem id="item_3">
+                <image>http://17.201.139.193/sample-xml/images/thumbnail-tv3.jpg</image>
+                <label>A basket full of puppies</label>
+                <label2>imontheinternet</label2>
+                <bottom-left-label>10:20</bottom-left-label>
+                <bottom-center-label>102121323232121 views</bottom-center-label>
+                <likeDislikeCounts>
+                  <likeCount>0</likeCount>
+                  <dislikeCount>99</dislikeCount>
+                </likeDislikeCounts>
+              </comboMenuItem>
+              <signInSignOutMenuItem accessibilityLabel="Sign out" id="list_19" signOutExitsApp="true">
+                <confirmation>
+                  <title>Are You Sure?</title>
+                  <description>The account %@ will be logged out of the service.</description>
+                </confirmation>
+                <stash>
+                  <data>Store data in an items stash that is specific to the item</data>
+                </stash>
+              </signInSignOutMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listWithPreview>
+  </body>
+</atv>

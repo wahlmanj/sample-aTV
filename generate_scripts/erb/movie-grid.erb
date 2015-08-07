@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+	<body>
+		<scroller id="com.sample.movie-grid">
+			<header>
+				<simpleHeader accessibilityLabel="Simple Movies" horizontalAlignment="right">
+					<title>Movies</title>
+					<image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+				</simpleHeader>
+			</header>
+			<items>
+				<collectionDivider alignment="left" accessibilityLabel="New arrivals">
+					<title>New Arrivals</title>
+				</collectionDivider>
+				<grid id="grid_0">
+					<items>
+						<% 14.times do |x| %>
+						<moviePoster id="grid_item_<%=x+1%>" accessibilityLabel="Movie <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+							<title>Movie <%= x+1 %></title>
+							<image src720="http://sample-web-server/sample-xml/images/720p/movie<%= x+1 %>.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie<%= x+1 %>.png" />
+							<defaultImage>resource://Poster.png</defaultImage>
+						</moviePoster>
+						<% end %>
+					</items>
+				</grid>
+				<collectionDivider alignment="left">
+					<title>Most Popular</title>
+				</collectionDivider>
+				<grid id="grid_1">
+					<items>
+						<% 14.times do |x| %>
+						<moviePoster id="grid_item_<%=x+1%>" accessibilityLabel="Movie <%=x+1%>" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/movie.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+							<title>Movie <%= x+1 %></title>
+							<image src720="http://sample-web-server/sample-xml/images/720p/movie<%= x+1 %>.png" src1080="http://sample-web-server/sample-xml/images/1080p/movie<%= x+1 %>.png" />
+							<defaultImage>resource://Poster.png</defaultImage>
+						</moviePoster>
+						<% end %>
+					</items>
+				</grid>
+			</items>
+		</scroller>
+	</body>
+</atv>

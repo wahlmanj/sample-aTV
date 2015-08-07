@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+    <script src="http://sample-web-server/sample-xml/js/views/DOMView/DOMView.js"/>
+    <script src="http://sample-web-server/sample-xml/js/testingcode.js"/>
+  </head>
+  <body>
+    <listWithPreview id="com.sample.javascript">
+      <header>
+        <simpleHeader>
+          <title>JavaScript Examples</title>
+        </simpleHeader>
+      </header>
+      <menu>
+        <sections>
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left">
+                <title>Loading Page Templates</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_00" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/js/javascript.xml');">
+                <label>Load URL</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_01" onSelect="atvutils.loadAndSwapURL('http://sample-web-server/sample-xml/js/javascript.xml');">
+                <label>Load and Swap URL</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_02" onSelect="atv.loadXML(document);">
+                <label>Load XML</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_03" onSelect="atv.loadAndSwapXML(document);">
+                <label>Load and Swap XML</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_04" onSelect="atv.exitApp();">
+                <label>Exit App (pop to main menu)</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left">
+                <title>Proxy Document</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_10" onSelect="decorateURLWithProxy('http://sample-web-server/sample-xml/js/documents/sampleSecured.xml');">
+                <label>Decorate URL with Proxy</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_11" onSelect="decorateXMLWithProxy('http://sample-web-server/sample-xml/js/documents/sampleTemplate.xml');">
+                <label>Decorate XML with Proxy</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left">
+                <title>DOM Menus</title>
+              </horizontalDivider>
+            </header>
+            <items id="items">
+              <oneLineMenuItem id="list_20" onSelect="toggleFavorite('list_20');">
+                <label>Add to Favorites</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_21" onSelect="toggle('list_21');">
+                <label>JS Toggle</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_22" onSelect="toggleAll(2);">
+                <label>JS Toggle All Menu Items</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_23" onSelect="remove('list_23');">
+                <label>Remove Me</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_24" onSelect="append();">
+                <label>Append an Item to End</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_25" onSelect="toggleSpinner('list_25');">
+                <label>Toggle Spinner</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_26" onSelect="toggleCheckmark('list_26');">
+                <label>Toggle Checkmark</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_27" onSelect="insertBefore('list_27');">
+                <label>Insert Before</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_28" onSelect="insertAfter('list_28');">
+                <label>Insert After</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left">
+                <title>Views and Objects</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_30" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/js/objects/script-runner.xml');">
+                <label>Object Examples</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_31" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/js/views/hello-world/script-view.xml');">
+                <label>View: Hello, World</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_32" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/js/views/text-view/script-view.xml');">
+                <label>View: TextView</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_33" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/js/views/image-view/script-view.xml');">
+                <label>View: ImageView</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_34" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/js/views/overlay/script-view.xml');">
+                <label>View: Compound Example (Overlay)</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left">
+                <title>Misc</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_40" onSelect="LoadDialogDOMView();">
+                <label>DOM View</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_41" onSelect="showTextEntry();">
+                <label>Text Entry Dialog</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_42" onSelect="showPINEntry();">
+                <label>PIN Entry Dialog</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_43" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/js/refresh.xml');">
+                <label>onRefresh Handler</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_44" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/js/navigate.xml');">
+                <label>onNavigate Handler</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_45" onSelect="atvStressTest();">
+                <label>K66 Stress Test</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </listWithPreview>
+  </body>
+</atv>

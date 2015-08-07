@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <videoPlayer id="com.sample.video-player">
+		<httpFileVideoAsset id="ABCD1234">
+			<mediaURL>http://trailers.apple.com/movies/universal/the_bourne_ultimatum/bourne_ultimatum-tlr2_h.640.mov</mediaURL>
+			<title>Sample Video Asset</title>
+			<description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+			<image>http://sample-web-server/sample-xml/images/movie1.png</image>
+			<private>
+				<myData>Vendor-specific data about this media asset accessible from Javascript.</myData>
+				<myData2>Vendor-specific data about this media asset accessible from Javascript.</myData2>
+			</private>
+		</httpFileVideoAsset>
+	</videoPlayer>
+  </body>
+</atv>

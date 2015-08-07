@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="http://sample-web-server/sample-xml/js/main.js"/>
+  </head>
+  <body>
+    <listWithPreview id="com.sample.video-playback">
+      <header>
+        <simpleHeader accessibilityLabel="Video playback">
+          <title>Video Playback</title>
+        </simpleHeader>
+      </header>
+      <menu>
+        <sections>
+	
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left" accessibilityLabel="HTTP File playback">
+                <title>HTTP File Playback</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_0" accessibilityLabel="Movie file" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                <label>Movie file</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left" accessibilityLabel="HTTP Live streaming playback">
+                <title>HTTP Live Streaming Playback</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_1" accessibilityLabel="Live movie" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-live-indefinite-video-player.xml');">
+                <label>Indefinite Duration (Live)</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_2" accessibilityLabel="Video on demand video" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-live-vod-video-player.xml');">
+                <label>Definite Duration (VOD)</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left" accessibilityLabel="Seek previews">
+                <title>Trick Play (aka Seek Previews)</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_3" accessibilityLabel="One image per second" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-live-trickplay-video-player.xml');">
+                <label>1 image per second</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left" accessibilityLabel="Event groups and interstitials">
+                <title>Event Groups and Interstitials</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_4" accessibilityLabel="Group example" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-live-eventgroups-video-player.xml');">
+                <label>2 group example</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_5" accessibilityLabel="Interstitials example" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-live-interstitials-video-player.xml');">
+                <label>Interstitials example</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left" accessibilityLabel="Bookmarks">
+                <title>Bookmarks</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_6" accessibilityLabel="Bookmark at 34 point 5 seconds" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-live-bookmark-video-player.xml');">
+                <label>Bookmark at 34.5 seconds</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_7" accessibilityLabel="Net bookmark at 5 seconds with interstitial" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-live-bookmark-net-video-player.xml');">
+                <label>Net bookmark at 5s with interstitial (gross should be 15s)</label>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="list_7_1" accessibilityLabel="Bookmark with Server Side Storage" onSelect="atvutils.loadURL('http://sample-web-server:3002/read-bookmark');">
+                <preview>
+                  <longDescriptionPreview>
+                    <title>Instuctions</title>
+                    <summary>Run the bookmark server by running ./startBookmarkServer.sh in the root folder of the sample site. This will start a web server on port 3002 that is used by the menu item to save/load bookmark.</summary>
+                    <image></image>
+                  </longDescriptionPreview>
+                </preview>
+                <label>Bookmark with Server Side Storage</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left" accessibilityLabel="Playlist">
+                <title>Playlist</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="list_8" accessibilityLabel="Video with Playlist" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/playlist-video-player.xml');">
+                <label>Video with Playlist</label>
+              </oneLineMenuItem>
+            </items>
+          </menuSection>
+
+        </sections>
+      </menu>
+    </listWithPreview>
+  </body>
+</atv>

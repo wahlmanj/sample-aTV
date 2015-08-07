@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+		<script src="http://sample-web-server/sample-xml/js/main.js"/>
+	</head>
+  <body>
+    <scroller id="com.sample.video-clips">
+      <header>
+        <simpleHeader accessibilityLabel="Movies">
+          <title>Movies</title>
+          <image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+        </simpleHeader>
+      </header>
+      <items>
+        <% @hashRows.each do |row| %>
+        <collectionDivider alignment="left" accessibilityLabel="<%=row["TITLE"]%>">
+          <title><%= row["TITLE"] %></title>
+        </collectionDivider>
+        
+		<% if row["TITLE"].end_with?("Shelf") %>
+		<% numItems = 50 %>		
+		<shelf id="shelf_<%=@hashRows.index(row)%>" columnCount="5">
+          <sections>
+            <shelfSection>
+		<% else %>
+		<% numItems = 20 %>
+		<grid id="grid_<%=@hashRows.index(row)%>" columnCount="5">
+        <% end %>
+
+			<items>
+				<% numItems.times do |x| %>
+				<% if row["TITLE"].start_with?("16x9") %>
+				<% posterType = 'sixteenByNinePoster'; imageURL = '16x9.png'; defaultImage = 'resource://16x9.png' %>
+				<% else %>
+				<% posterType = 'fourByThreePoster'; imageURL = '4x3.jpg'; defaultImage = 'resource://4x3.png' %>
+				<% end %>
+				
+                <<%=posterType%> id="item_<%=@hashRows.index(row)%>_<%=x+1%>" accessibilityLabel="Poster item <%=x+1%>" alwaysShowTitles="true" onSelect="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');" onPlay="atvutils.loadURL('http://sample-web-server/sample-xml/sample-video/http-file-video-player.xml');">
+                  <title>Video Clip <%=x+1%></title>
+				  <subtitle>Subtitle</subtitle>
+                  <image src720="http://sample-web-server/sample-xml/images/720p/<%= imageURL %>" src1080="http://sample-web-server/sample-xml/images/1080p/<%= imageURL %>" />
+                  <defaultImage><%=defaultImage%></defaultImage>
+                </<%=posterType%>>
+				<% end %>
+			</items>
+        
+		<% if row["TITLE"].end_with?("Shelf") %>
+        	</shelfSection>
+      	  </sections>
+    	</shelf>
+		<% else %>
+		</grid>
+        <% end %>
+		    
+		<% end %>
+      </items>
+    </scroller>
+  </body>
+</atv>

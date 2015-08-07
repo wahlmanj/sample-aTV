@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <standings id="com.sample.standings">
+      <header>
+        <simpleHeader accessibilityLabel="Standings">
+          <title>Standings</title>
+          <image required="true">http://sample-web-server/sample-xml/images/ZYXLogo.png</image>
+        </simpleHeader>
+      </header>
+      <items>
+        <standingsItem>
+          <title>Hullabaloo in Guava Orchard</title>
+          <backgroundImage required="true">http://sample-web-server/sample-xml/images/parade1.jpg</backgroundImage>
+          <table>
+            <columnDefinitions>
+              <columnDefinition alignment="center" width="14.14"/>
+              <columnDefinition alignment="left" width="28.94">
+                <title>Team</title>
+              </columnDefinition>
+              <columnDefinition alignment="center" width="12.64">
+                <title>Wins</title>
+              </columnDefinition>
+              <columnDefinition alignment="center" width="14.47">
+                <title>Losses</title>
+              </columnDefinition>
+              <columnDefinition alignment="center" width="18.55">
+                <title>PCT</title>
+              </columnDefinition>
+              <columnDefinition alignment="center" width="11.28">
+                <title>GB</title>
+              </columnDefinition>
+            </columnDefinitions>
+            <rows>
+              <row>
+                <image required="true">http://sample-web-server/sample-xml/images/team1-98x98.png</image>
+                <label>Team 1</label>
+                <label>102</label>
+                <label>60</label>
+                <label>.630</label>
+                <label>-</label>
+              </row>
+              <row>
+                <image required="true">http://sample-web-server/sample-xml/images/team2-98x98.png</image>
+                <label>Team 2</label>
+                <label>89</label>
+                <label>73</label>
+                <label>.549</label>
+                <label>13.0</label>
+              </row>
+            </rows>
+          </table>
+        </standingsItem>
+        <standingsItem>
+          <title>Hullabaloo in Guava Orchard</title>
+          <backgroundImage required="true">http://sample-web-server/sample-xml/images/parade1.jpg</backgroundImage>
+          <table>
+            <columnDefinitions>
+              <columnDefinition alignment="center" width="14.14"/>
+              <columnDefinition alignment="left" width="28.94">
+                <title>Team</title>
+              </columnDefinition>
+              <columnDefinition alignment="center" width="12.64">
+                <title>Wins</title>
+              </columnDefinition>
+              <columnDefinition alignment="center" width="14.47">
+                <title>Losses</title>
+              </columnDefinition>
+              <columnDefinition alignment="center" width="18.55">
+                <title>PCT</title>
+              </columnDefinition>
+              <columnDefinition alignment="center" width="11.28">
+                <title>GB</title>
+              </columnDefinition>
+            </columnDefinitions>
+            <rows>
+              <row>
+                <image required="true">http://sample-web-server/sample-xml/images/team1-98x98.png</image>
+                <label>Team 1</label>
+                <label>102</label>
+                <label>60</label>
+                <label>.630</label>
+                <label>-</label>
+              </row>
+              <row>
+                <image required="true">http://sample-web-server/sample-xml/images/team2-98x98.png</image>
+                <label>Team 2</label>
+                <label>89</label>
+                <label>73</label>
+                <label>.549</label>
+                <label>13.0</label>
+              </row>
+            </rows>
+          </table>
+        </standingsItem>
+      </items>
+    </standings>
+  </body>
+</atv>

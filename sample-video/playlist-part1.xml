@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlistAssets>
+	<httpFileVideoAsset id="PLAYLISTVIDEO1">
+		<mediaURL>http://trailers.apple.com/movies/dreamworks/realsteel/realsteel-hitback_h720p.mov</mediaURL>
+		<title>Playlist Video 1</title>
+		<description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+		<image>http://sample-web-server/sample-xml/images/movie1.png</image>
+	</httpFileVideoAsset>
+	<httpFileVideoAsset id="PLAYLISTVIDEO2">
+		<mediaURL>http://trailers.apple.com/movies/dreamworks/realsteel/realsteel-tlr2_h720p.mov</mediaURL>
+		<title>Playlist Video 2</title>
+		<description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+		<image>http://sample-web-server/sample-xml/images/movie1.png</image>
+	</httpFileVideoAsset>
+	<httpFileVideoAsset id="PLAYLISTVIDEO3">
+		<mediaURL>http://trailers.apple.com/movies/dreamworks/realsteel/realsteel-tlr1_h720p.mov</mediaURL>
+		<title>Playlist Video 3</title>
+		<description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+		<image>http://sample-web-server/sample-xml/images/movie1.png</image>
+	</httpFileVideoAsset>
+</playlistAssets>
